@@ -2630,10 +2630,6 @@
     <script type="text/javascript"
             src="/local/components/positronica/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
-    <script type="text/javascript"
-            src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
-    <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
             src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>

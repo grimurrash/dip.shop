@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', 'SideController@index');
+Route::get('/', 'SideController@index')->name('main');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 // Pages
 Route::get('/info/dostavka','SideController@dostavka')->name('dostavka');

@@ -113,10 +113,8 @@
 
     </div>
 </div>
+
 @include('components.modal')
-
-
-
 
 <!-- Scripts -->
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
@@ -125,7 +123,7 @@
 <script type="text/javascript" src="{{ asset('js/device.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.mobile.touch.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/carusel.js') }}"></script>
-<script type="text/javascript" src="{{ asset('vender/fontawesome/js/all.min.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('vender/fontawesome/js/all.min.js') }}"></script>--}}
 <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/select2/select2.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/select2/ru.js') }}"></script>
