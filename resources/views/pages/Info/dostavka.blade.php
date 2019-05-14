@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title',"Условия доставки товара, сроки, стоимость доставки - ПОЗИТРОНИКА (Казань)")
-@section('description','Условия доставки товара, ориентируемые сроки, стоимость доставки товара - ПОЗИТРОНИКА (Казань)')
+@section('title')
+    Условия доставки товара, сроки, стоимость доставки - {{ config('app.name', 'Мир котлов') }}
+@endsection
 
 @section('content')
     @include('components.wrap_menu')

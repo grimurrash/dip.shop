@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title',"Способы, условия оплаты, предоплаты товара и услуг - ПОЗИТРОНИКА (Казань)")
-@section('description','Способы оплаты товара (наличные, безналичные), условия оплаты, предоплаты товара и услуг - ПОЗИТРОНИКА (Казань)')
-
+@section('title')
+Способы, условия оплаты, предоплаты товара и услуг - {{ config('app.name', 'Мир котлов') }}
+@endsection
 @section('content')
     @include('components.wrap_menu')
     <div class="content">

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title',"Краткая информация о компании ПОЗИТРОНИКА «ПОЗИТРОНИКА (Казань)")
-@section('description','Краткая информация о компании ПОЗИТРОНИКА – Федеральная сеть магазинов электроники и бытовой техники «ПОЗИТРОНИКА (Казань)')
+@section('title')
+    Краткая информация о компании «{{ config('app.name', 'Мир котлов') }}»
+@endsection
 
 @section('content')
     @include('components.wrap_menu')
