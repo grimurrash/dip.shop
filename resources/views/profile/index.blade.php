@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title',"Бытовая техника и электроника в Казани - интернет-магазин Позитроника")
-@section('description','Федеральный интернет-магазин Позитроника предлагает большой выбор электроники и бытовой техники по выгодным ценам в Казани')
-
+@section('title')
+    Бытовая техника и электроника в Казани - интернет-магазин {{ config('app.name', 'Мир котлов') }}
+@endsection
 @section('content')
     @include('components.wrap_menu')
     <div class="content">

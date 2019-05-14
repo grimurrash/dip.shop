@@ -7,9 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>@yield('title')</title>
-    <meta name="description" content="@yield('description')">
     <link rel="canonical" href="https://kazan.positronica.ru/">
-    <!-- !Meta -->
+    <!-- END Meta -->
 
     <!-- Styles -->
     <script type="text/javascript" data-skip-moving="true">(function (w, d, n) {
@@ -86,13 +85,12 @@
         })(window, document, navigator);</script>
     <link href="{{ asset('css/kernel_main.css') }}" type="text/css" rel="stylesheet">
     <link href="{{ asset('css/page.css') }}" type="text/css" rel="stylesheet">
-    <link href="{{ asset('css/template.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
     @stack('styles')
-    {{-- !Styles--}}
+    {{-- END Styles--}}
 
     {{-- Vender--}}
     <link href="{{ asset('vender/fontawesome/css/all.css') }}" type="text/css" rel="stylesheet">
-    {{-- !Vender --}}
+    {{-- END Vender --}}
     {{-- Favicon --}}
     <link rel="shortcut icon" type="image/png" href="{{ asset('favicon.png') }}"/>
 
@@ -103,7 +101,6 @@
 </div>
 @include('components.navigation')
 @include('components.header')
-
 <div class="container-fluid wrap">
     <div class='row1'>
         <div class='wrap_content'>
@@ -116,14 +113,13 @@
 
 @include('components.modal')
 
-<!-- Scripts -->
+<!-- JavaScript -->
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <input type="hidden" name="ajax_check_token" id="ajax_check_token" value="e42109b492e009bb061ef0d173e3edea"/>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/device.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.mobile.touch.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/carusel.js') }}"></script>
-{{--<script type="text/javascript" src="{{ asset('vender/fontawesome/js/all.min.js') }}"></script>--}}
 <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/select2/select2.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/select2/ru.js') }}"></script>

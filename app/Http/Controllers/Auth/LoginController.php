@@ -5,7 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\MessageBag;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
@@ -27,7 +30,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin';
 
     /**
      * Create a new controller instance.
@@ -64,7 +67,7 @@ class LoginController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function login(Request $request)
+    public function loginResponse(Request $request)
     {
         $valid = $this->validator($request->all());
         if ($valid->fails()) {
@@ -87,4 +90,38 @@ class LoginController extends Controller
             'url'=>route('main'),
         ])->setStatusCode(200, 'Successful authorized');
     }
+
+    /**
+     * Get the failed login response instance.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     *
+     * @throws \Illuminate\Validation\ValidationException
+     */
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        throw ValidationException::withMessages([
+            $this->username() => 'Неправильный логин или пароль',
+        ]);
+    }
+
+    public function login(Request $request){
+        $valid = $this->validator($request->all());
+        if ($valid->fails()) {
+            return redirect()->back()->withErrors($valid->errors())->withInput();
+        }
+        if (!$this->attemptLogin($request)) {
+            $this->incrementLoginAttempts($request);
+            return redirect()->back()->withErrors(ValidationException::withMessages(['email'=>'Неправильный логин или пароль']));
+        }
+        $user = $this->guard()->user();
+        if($user->role !== 'admin'){
+            $this->guard()->logout();
+            Session::flash('message_error','Недостаточно прав');
+            return redirect()->back()->withInput();
+        }
+        return redirect()->route('admin.index');
+    }
+
 }

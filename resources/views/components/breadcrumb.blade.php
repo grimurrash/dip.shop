@@ -1,3 +1,4 @@
+{{-- BREADCRUMB --}}
 <ul class="breadcrumb hidden-xs">
     <li itemscope="" itemprop="itemListElement">
         <a itemprop="item" href="/">
@@ -16,3 +17,4 @@
     @endisset
     <li class="active">{{ $active }}</li>
 </ul>
+{{-- END BREADCRUMB--}}

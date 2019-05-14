@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('mobile_phone')->nullable();
             $table->enum('gender',['M','F'])->nullable();
             $table->date('birthday')->nullable();
+            $table->unsignedBigInteger('avatar')->nullable();
+            $table->foreign('avatar')->references('id')->on('images');
             $table->rememberToken();
             $table->timestamps();
         });

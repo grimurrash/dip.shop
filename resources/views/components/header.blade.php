@@ -1,3 +1,4 @@
+{{-- HEADER --}}
 <div class="container-fluid head">
     <div class='row'>
         <div class='col-xs-2 col-sm-1 col-md-4 col-lg-3 logo hidden-xs'>
@@ -35,3 +36,4 @@
         </div>
     </div>
 </div>
+{{-- END HEADER--}}

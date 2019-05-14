@@ -2,13 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Product;
+use App\Subcategory;
 use Illuminate\Http\Request;
 
 class SideController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('welcome',[
+            'best_price_products'=>Product::where('best_price',1)->take(12),
+            'new_item_products'=>Product::where('new_item',1)->take(12),
+            'bestsellers_products'=>Product::where('bestsellers',1)->take(12),
+        ]);
     }
 
     public function dostavka()
@@ -34,5 +41,17 @@ class SideController extends Controller
     public function company()
     {
         return view('pages.company');
+    }
+
+    public function admin()
+    {
+        return view('admin.index',[
+            'subcategory_take'=>Subcategory::orderBy('created_at')->take(5)->get(),
+        ]);
+    }
+
+    public function login_admin()
+    {
+        return view('admin.auth.login');
     }
 }

@@ -1,3 +1,4 @@
+{{-- NAVBAR--}}
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -99,6 +100,7 @@
     </div>
     <div class='basket'></div>
 </div>
+{{-- END NAVBAR--}}
 @push('scripts')
     <script type="text/javascript"
             src="/local/templates/components/system.auth.form/script.min.js?15477210201775"></script>

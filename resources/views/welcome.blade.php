@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
-@section('title',"Бытовая техника и электроника в Казани - интернет-магазин Позитроника")
-@section('description','Интернет-магазин Позитроника предлагает большой выбор электроники и бытовой техники по выгодным ценам в Казани')
+@section('title',"Бытовая техника и электроника в Казани - интернет-магазин Мир котлов" )
+@push('styles')
+    <link href="{{ asset('css/welcome.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
+@endpush
 
 @section('content')
     @include('components.wrap_menu')

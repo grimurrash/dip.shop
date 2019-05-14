@@ -1,3 +1,4 @@
+{{-- MODAL --}}
 <div class="modal fade availableStore" id="availableStore" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -93,3 +94,4 @@
         </div>
     </div>
 </div>
+{{-- END MODAL--}}

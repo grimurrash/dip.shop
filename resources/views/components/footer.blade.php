@@ -1,3 +1,4 @@
+{{-- FOOTER --}}
 <div class="footer">
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lgx-2 logo">
         <div></div>
@@ -54,3 +55,4 @@
         </div>
     </div>
 </div>
+{{-- END FOOTER--}}
