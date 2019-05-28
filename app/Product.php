@@ -21,10 +21,10 @@ class Product extends Model
         return $this->price . " ". "₽";
     }
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+//    public function getRouteKeyName()
+//    {
+//        return 'slug';
+//    }
 
     public function image()
     {

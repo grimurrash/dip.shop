@@ -13,8 +13,8 @@ class Category extends Model
         return $this->hasMany(Subcategory::class);
     }
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+//    public function getRouteKeyName()
+//    {
+//        return 'slug';
+//    }
 }

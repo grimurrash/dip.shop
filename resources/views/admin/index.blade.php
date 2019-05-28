@@ -64,7 +64,7 @@
                 </div>
                 <!-- END OVERVIEW -->
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <!-- TASKS -->
                         <div class="panel">
                             <div class="panel-heading">
@@ -81,7 +81,7 @@
                                         <li>
                                             <p>
                                                 <span class="title">{{ $item->title }}</span>
-                                                <span class="short-description">Родительская категория: <br> <b>{{ $item->parent->title }}</b></span>
+                                                <span class="short-description">Родительская категория: <b>{{ $item->parent->title }}</b></span>
                                                 <span class="date">{{ date('M d, Y', strtotime($item->created_at)) }}</span>
                                             </p>
                                             <div class="controls">
@@ -97,7 +97,7 @@
                         </div>
                         <!-- END TASKS -->
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <!-- VISIT CHART -->
                         <div class="panel">
                             <div class="panel-heading">
@@ -109,7 +109,23 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-
+                                <ul class="list-unstyled todo-list">
+                                    @forelse($product_take as $item)
+                                        <li>
+                                            <p>
+                                                <span class="title">{{ $item->name }}</span>
+                                                <span class="short-description">Категория:<b>{{ $item->category->title }}</b></span>
+                                                <span class="date">{{ date('M d, Y', strtotime($item->created_at)) }}</span>
+                                            </p>
+                                            <div class="controls">
+                                                <a href="#"><i class="icon-software icon-software-pencil"></i></a> <a
+                                                        href="#"><i
+                                                            class="icon-arrows icon-arrows-circle-remove"></i></a>
+                                            </div>
+                                        </li>
+                                    @empty
+                                    @endforelse
+                                </ul>
                             </div>
                         </div>
                         <!-- END VISIT CHART -->
@@ -138,12 +154,6 @@
     </div>
     <!-- END MAIN -->
     <div class="clearfix"></div>
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-            </p>
-        </div>
-    </footer>
 @endsection
 
 @push('scripts')

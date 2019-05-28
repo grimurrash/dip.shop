@@ -35,9 +35,21 @@
                    data-class-popover="basketPopoverConfig"
                    data-html="true"
                    rel="nofollow"></a>
-
-                <div class="visible-lg visible-md cart" id="cart_informer"> 0 позиций на
-                    сумму 0 ₽
+                <?php
+                    if(session()->get('basket') !== null){
+                        $basket = session()->get('basket');
+                    }else{
+                        $basket = [];
+                    }
+                ?>
+                <div class="visible-lg visible-md cart" id="cart_informer">
+                    {{ count($basket) }} позиций на сумму <?php
+                        $total = 0;
+                        foreach ($basket as $item) {
+                            $total += $item['count'] * $item['product']['price'];
+                        }
+                        echo $total;
+                     ?> ₽
                 </div>
             </div>
 

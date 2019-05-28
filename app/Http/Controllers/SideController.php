@@ -12,9 +12,9 @@ class SideController extends Controller
     public function index()
     {
         return view('welcome',[
-            'best_price_products'=>Product::where('best_price',1)->take(12),
-            'new_item_products'=>Product::where('new_item',1)->take(12),
-            'bestsellers_products'=>Product::where('bestsellers',1)->take(12),
+            'best_price_products'=>Product::where('best_price',1)->take(12)->get(),
+            'new_item_products'=>Product::where('new_item',1)->take(12)->get(),
+            'bestsellers_products'=>Product::where('bestsellers',1)->take(12)->get(),
         ]);
     }
 
@@ -47,6 +47,7 @@ class SideController extends Controller
     {
         return view('admin.index',[
             'subcategory_take'=>Subcategory::orderBy('created_at')->take(5)->get(),
+            'product_take'=>Product::orderBy('created_at')->take(5)->get()
         ]);
     }
 

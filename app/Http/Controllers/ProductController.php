@@ -78,8 +78,8 @@ class ProductController extends Controller
             $imageName = Str::slug(mb_substr($request->name, 0, 30) . Carbon::now()->format('dmYHi'), '-') . '.' . $image->getClientOriginalExtension();
             $image->move(storage_path('images'), $imageName);
             $image = Image::create([
-                'name'=> $imageName,
-                'url'=>url('storage/images/'.$imageName)
+                'name' => $imageName,
+                'url' => url('storage/images/' . $imageName)
             ]);
         }
 
@@ -89,12 +89,12 @@ class ProductController extends Controller
             'slug' => Str::slug(mb_substr($request->name, 0, 30)),
             'price' => $request->price,
             'quantity' => $request->quantity,
-            'image_id'=>$image->id,
-            'description'=>is_null($request->description) ? '' : $request->description ,
-            'details'=>is_null($request->details) ? '' : $request->details,
-            'best_price'=>$request->best_price == 'on' ? 1 : 0 ,
-            'new_item'=>$request->new_item == 'on' ? 1 : 0,
-            'bestsellers'=>$request->bestsellers == 'on' ? 1 : 0,
+            'image_id' => $image->id,
+            'description' => is_null($request->description) ? '' : $request->description,
+            'details' => is_null($request->details) ? '' : $request->details,
+            'best_price' => $request->best_price == 'on' ? 1 : 0,
+            'new_item' => $request->new_item == 'on' ? 1 : 0,
+            'bestsellers' => $request->bestsellers == 'on' ? 1 : 0,
         ]);
         Session::flash('message_success', 'Товар «' . $product->name . '» успешно создан');
         return redirect()->route('admin.products.index');
@@ -108,7 +108,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('catalog.products.show', compact('product'));
     }
 
     /**
@@ -121,7 +121,7 @@ class ProductController extends Controller
     {
         return view('admin.products.edit', [
             'subcategories' => Subcategory::all(),
-            'product'=>$product
+            'product' => $product
         ]);
     }
 
@@ -135,7 +135,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $valid = Validator::make($request->all(), [
-            'name' => ['required', 'string', 'max:255', 'unique:products,id,'.$product->id],
+            'name' => ['required', 'string', 'max:255', 'unique:products,id,' . $product->id],
             'subcategory_id' => ['required', 'exists:subcategories,id'],
             'price' => ['required', 'numeric'],
             'quantity' => ['required', 'numeric'],
@@ -155,7 +155,7 @@ class ProductController extends Controller
             return redirect()->back()->withInput()->withErrors($valid->errors());
         }
 
-        if($request->hasFile('image')){
+        if ($request->hasFile('image')) {
             $valid = Validator::make($request->all(), [
                 'image' => ['required', 'image', 'mimes:jpeg,jpg,png,gif', 'max:10240']
             ], [
@@ -171,10 +171,10 @@ class ProductController extends Controller
             $imageName = Str::slug(mb_substr($request->name, 0, 30) . Carbon::now()->format('dmYHi'), '-') . '.' . $image->getClientOriginalExtension();
             $image->move(storage_path('images'), $imageName);
             $image = Image::create([
-                'name'=> $imageName,
-                'url'=>url('storage/images/'.$imageName)
+                'name' => $imageName,
+                'url' => url('storage/images/' . $imageName)
             ]);
-        }else{
+        } else {
             $image = $product->image;
         }
 
@@ -184,14 +184,14 @@ class ProductController extends Controller
             'slug' => Str::slug(mb_substr($request->name, 0, 30)),
             'price' => $request->price,
             'quantity' => $request->quantity,
-            'image_id'=>$image->id,
-            'description'=>is_null($request->description) ? '' : $request->description ,
-            'details'=>is_null($request->details) ? '' : $request->details,
-            'best_price'=>$request->best_price == 'on' ? 1 : 0 ,
-            'new_item'=>$request->new_item == 'on' ? 1 : 0,
-            'bestsellers'=>$request->bestsellers == 'on' ? 1 : 0,
+            'image_id' => $image->id,
+            'description' => is_null($request->description) ? '' : $request->description,
+            'details' => is_null($request->details) ? '' : $request->details,
+            'best_price' => $request->best_price == 'on' ? 1 : 0,
+            'new_item' => $request->new_item == 'on' ? 1 : 0,
+            'bestsellers' => $request->bestsellers == 'on' ? 1 : 0,
         ]);
-        dd($product );
+        dd($product);
         Session::flash('message_success', 'Товар «' . $product->name . '» успешно создан');
         return redirect()->route('admin.products.index');
     }
@@ -204,7 +204,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        Session::flash('message_success',  'Товар «'.$product->name.'» успешно удален');
+        Session::flash('message_success', 'Товар «' . $product->name . '» успешно удален');
         $product->delete();
         return redirect()->route('admin.products.index');
     }

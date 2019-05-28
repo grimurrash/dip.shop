@@ -34,13 +34,19 @@ Route::middleware('auth')->prefix('profile')->name('profile.')->group(function (
 });
 
 // Catalog
-
 Route::prefix('catalog')->name('catalog.')->group(function (){
    Route::get('/{subcategory}/','SubcategoryController@show')->name('show');
    Route::get('/','SubcategoryController@indexSub')->name('index');
    Route::get('/products/{product}','ProductController@show')->name('products.show');
 });
 
+//Basket
+Route::prefix('cart')->name('cart.')->group(function (){
+    Route::get('/','BasketController@show')->name('show');
+    Route::get('/delete','BasketController@destroy')->name('delete');
+    Route::get('/add/{product}','BasketController@addProduct')->name('add');
+    Route::get('/remove/{product}','BasketController@removeProduct')->name('remove');
+});
 
 //Admin Route
 

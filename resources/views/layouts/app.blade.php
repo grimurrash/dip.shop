@@ -84,7 +84,7 @@
             }
         })(window, document, navigator);</script>
     <link href="{{ asset('css/kernel_main.css') }}" type="text/css" rel="stylesheet">
-    <link href="{{ asset('css/page.css') }}" type="text/css" rel="stylesheet">
+    {{--<link href="{{ asset('css/page.css') }}" type="text/css" rel="stylesheet">--}}
     @stack('styles')
     {{-- END Styles--}}
 
