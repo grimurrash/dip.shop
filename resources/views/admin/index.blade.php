@@ -3,7 +3,11 @@
 @section('title',"Админ панель")
 
 @push('styles')
-
+<style>
+    .list-unstyled li p> span {
+        display: block;
+    }
+</style>
 @endpush
 
 @section('content')
@@ -54,7 +58,7 @@
                                 <div class="metric">
                                     <span class="icon"><i class="fa fa-shopping-bag"></i></span>
                                     <p>
-                                        <span class="number">1</span>
+                                        <span class="number">{{ \App\Order::count() }}</span>
                                         <span class="title">Заказов</span>
                                     </p>
                                 </div>
@@ -142,7 +146,26 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-
+                                <ul class="list-unstyled todo-list">
+                                    @forelse($order_take as $item)
+                                        <li>
+                                            <p>
+                                                <span class="title">Заказ № {{ $item->id }}
+                                                    <span class="{{ $item->statusClass() }}">{{ $item->status }}</span>
+                                                </span>
+                                                <a href="{{ route('admin.orders.show',$item) }}" type="button"
+                                                   class="btn btn-primary" style="margin: 10px 0;">Перейти к заказу</a>
+                                                <span class="date">{{ date('M d, Y', strtotime($item->created_at)) }}</span>
+                                            </p>
+                                            <div class="controls">
+                                                <a href="#"><i class="icon-software icon-software-pencil"></i></a> <a
+                                                        href="#"><i
+                                                            class="icon-arrows icon-arrows-circle-remove"></i></a>
+                                            </div>
+                                        </li>
+                                    @empty
+                                    @endforelse
+                                </ul>
                             </div>
                         </div>
                         <!-- END REALTIME CHART -->

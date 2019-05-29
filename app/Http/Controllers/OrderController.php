@@ -17,7 +17,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-
+        return view('admin.orders.index', [
+            'orders' => Order::orderBy('id')->paginate(8)
+        ]);
     }
 
     /**
@@ -66,7 +68,7 @@ class OrderController extends Controller
             'fio' => $request->fio,
             'email' => $request->email,
             'phone' => $request->tel,
-            'address' => $request->address . ' ' . $request->dom . ' ' . $request->kv,
+            'address' => $request->address . ' ' . $request->dom . '/' . $request->kv,
             'comment' => $request->comment
         ]);
 
@@ -94,7 +96,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        //
+        return view('admin.orders.show',compact('order'));
     }
 
     /**
@@ -117,7 +119,17 @@ class OrderController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        //
+        if($order->status === 'В ожидании'){
+            $order->update([
+                'status'=>'В процессе'
+            ]);
+        }else if($order->status === 'В процессе'){
+            $order->update([
+                'status'=>'Выполнен'
+            ]);
+        }
+        $request->session()->flush('message_success','Статус заказа изменен');
+        return redirect()->route('admin.orders.show',$order);
     }
 
     /**
@@ -126,8 +138,12 @@ class OrderController extends Controller
      * @param  \App\Order $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy(Order $order, Request $request)
     {
-        //
+        $order->update([
+            'status'=>'Отменен'
+        ]);
+        $request->session()->flush('message_success','Заказ отменен');
+        return redirect()->route('admin.orders.show',$order);
     }
 }

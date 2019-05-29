@@ -52,7 +52,7 @@
                                         <td>{{ $product->id  }}</td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->category->title }}</td>
-                                        <td>{{ $product->price }}</td>
+                                        <td>{{ $product->price }} ₽</td>
                                         <td>{{ $product->quantity }}</td>
                                         <td>
                                             <button onclick="event.preventDefault();document.getElementById('product-delete-{{ $product->id }}').submit();"
@@ -78,7 +78,7 @@
                                 </tbody>
                                 <tfoot>
                                 <tr>
-                                    {{-- Paginate --}}
+                                   <td colspan="6" class="text-center">{{ $products->links() }}</td>
                                 </tr>
                                 </tfoot>
                             </table>

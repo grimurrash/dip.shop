@@ -3,6 +3,9 @@
 @section('title')
     Бытовая техника и электроника в Казани - интернет-магазин {{ config('app.name', 'Мир котлов') }}
 @endsection
+@push('styles')
+    <link href="{{ asset('css/profile.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
+@endpush
 @section('content')
     @include('components.wrap_menu')
     <div class="content">
@@ -24,13 +27,13 @@
                                     <a href="{{ route('profile.index') }}">Мои данные</a>
                                 </li>
 
-                                <li class="">
-                                    <a href="{{ route('profile.orders') }}">Мои заказы</a>
-                                </li>
+                                {{--<li class="">--}}
+                                    {{--<a href="{{ route('profile.orders') }}">Мои заказы</a>--}}
+                                {{--</li>--}}
 
-                                <li class="">
-                                    <a href="{{ route('profile.wish') }}">Список желаний</a>
-                                </li>
+                                {{--<li class="">--}}
+                                    {{--<a href="{{ route('profile.wish') }}">Список желаний</a>--}}
+                                {{--</li>--}}
 
                             </ul>
 
@@ -48,6 +51,7 @@
                                                 <div class="pull-left">Личные данные</div>
                                                 <input type="submit" class="editable btn btn-primary pull-right"
                                                        id="edit_personal" name="save"
+                                                       disabled
                                                        data-submit="no" data-alternative="Редактировать"
                                                        value="Сохранить">
                                             </div>
@@ -234,7 +238,7 @@
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <div class="input-group-btn">
-                                                            <input type="submit" class="btn btn-primary "
+                                                            <input type="submit" disabled class="btn btn-primary "
                                                                    name="save" value="Сохранить">
                                                         </div>
                                                     </div>

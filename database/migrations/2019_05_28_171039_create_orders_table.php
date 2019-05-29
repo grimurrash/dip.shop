@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->string('phone');
             $table->string('address');
             $table->text('comment');
+            $table->enum('status',['В ожидании','В процессе','Отменен','Выполнен'])->default('В ожидании');
             $table->timestamps();
         });
     }

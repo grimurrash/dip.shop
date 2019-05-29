@@ -22,49 +22,49 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="item active" id="bx_3218110189_411094">
-                        <a href="/news/vyigrayte-odin-iz-shesti-televizorov/">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/009/009953451973a30538071fe0ba00630c.jpg?155505596139857"
                                  alt="Выиграйте телевизор">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_406914">
-                        <a href="/news/vmeste-vygodno/">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/7d8/7d8fb6f7367fcfb8313be35409d9b5f2.jpg?155248471059792"
                                  alt="Canon вместе выгодно">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_413607">
-                        <a href="/news/may-pokupay-ne-zevay/">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/c70/c701638d55e5600b24c475d92435db88.jpg?155660906039215"
                                  alt="Май покупай не зевай">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_404885">
-                        <a href="search/?q=Sony+MHC-V">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/466/466ef15c2ae66ce323eded2e2670978a.jpg?155136775349166"
                                  alt="Sony MHC-V71D (цветная)">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_411093">
-                        <a href="/news/do-15-000-rubley-v-podarok-ot-lg/">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/074/074dd49fad5049d093b66a0019063b42.jpg?155505572142900"
                                  alt="Сертификат в подарок (с 15 апр. - 12 мая)">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_412837">
-                        <a href="/news/rubetek-umnyy-podkhod/">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/010/010b1d43678bfe28b01d5e0e11f433a9.jpg?155602858534984"
                                  alt="Лампочка с датчиком движения">
                         </a>
                     </div>
                     <div class="item " id="bx_3218110189_396111">
-                        <a href="/search/?q=SRS-XB41">
+                        <a href="#">
                             <img class="third-slide"
                                  src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/313/31370e14126836b789487ce46a960399.jpg?154529969074062"
                                  alt="Sony SRS-XB41">
@@ -74,14 +74,14 @@
             </div>
 
             <div class="mini-banner col-lgx-2 visible-lgx" id="bx_651765591_411852">
-                <a href="/reviews/?utm_source=obzor&utm_medium=banner&utm_campaign=obzory">
+                <a href="#">
                     <img class="img-responsive"
                          src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/465/4651d164d70c547cba3af10bbe6c7def.jpg?155559952316929"
                          alt="Помогаем сделать выбор">
                 </a>
             </div>
             <div class="mini-banner col-lgx-2 visible-lgx" id="bx_651765591_262437">
-                <a href="https://vk.com/positronica">
+                <a href="#">
                     <img class="img-responsive"
                          src="//opt-860641.ssl.1c-bitrix-cdn.ru/upload/iblock/abb/abb72d9e7aba1c021df594a464537750.jpg?151194924618146"
                          alt="Вконтакте">

@@ -15,9 +15,9 @@ Route::get('/', 'SideController@index')->name('main');
 
 // Auth
 
-Route::post('/login','Auth\LoginController@loginResponse')->name('login');
-Route::post('/logout','Auth\LoginController@logout')->name('logout');
-Route::post('/register','Auth\RegisterController@register')->name('register');
+Route::post('/login', 'Auth\LoginController@loginResponse')->name('login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
 // Pages
 Route::get('/info/dostavka', 'SideController@dostavka')->name('dostavka');
@@ -27,12 +27,12 @@ Route::get('/company', 'SideController@company')->name('company');
 Route::get('/rent', 'SideController@rent')->name('rent');
 
 //Search
-Route::get('search','SideController@search')->name('search');
+Route::get('search', 'SideController@search')->name('search');
 
 //Order
-Route::get('order','OrderController@create')->name('order.create');
-Route::post('order','OrderController@store')->name('order.store');
-Route::get('order/end',function (){
+Route::get('order', 'OrderController@create')->name('order.create');
+Route::post('order', 'OrderController@store')->name('order.store');
+Route::get('order/end', function () {
     return view('catalog.orderend');
 })->name('order.end');
 
@@ -45,35 +45,38 @@ Route::middleware('auth')->prefix('profile')->name('profile.')->group(function (
 });
 
 // Catalog
-Route::prefix('catalog')->name('catalog.')->group(function (){
-   Route::get('/{subcategory}/','SubcategoryController@show')->name('show');
-   Route::get('/','SubcategoryController@indexSub')->name('index');
-   Route::get('/products/{product}','ProductController@show')->name('products.show');
+Route::prefix('catalog')->name('catalog.')->group(function () {
+    Route::get('/{subcategory}/', 'SubcategoryController@show')->name('show');
+    Route::get('/', 'SubcategoryController@indexSub')->name('index');
+    Route::get('/products/{product}', 'ProductController@show')->name('products.show');
 });
 
 //Basket
-Route::prefix('cart')->name('cart.')->group(function (){
-    Route::get('/','BasketController@show')->name('show');
-    Route::get('/delete/{product}','BasketController@destroy')->name('delete');
-    Route::get('/add/{product}','BasketController@addProduct')->name('add');
-    Route::get('/remove/{product}','BasketController@removeProduct')->name('remove');
+Route::prefix('cart')->name('cart.')->group(function () {
+    Route::get('/', 'BasketController@show')->name('show');
+    Route::get('/delete/{product}', 'BasketController@destroy')->name('delete');
+    Route::get('/add/{product}', 'BasketController@addProduct')->name('add');
+    Route::get('/remove/{product}', 'BasketController@removeProduct')->name('remove');
 });
 
 //Admin Route
 
 Route::get('/admin/login', 'SideController@login_admin')->name('admin.login');
-Route::post('/admin/login','Auth\LoginController@login')->name('admin.loginPost');
-
+Route::post('/admin/login', 'Auth\LoginController@login')->name('admin.loginPost');
 
 
 Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', 'SideController@admin')->name('index');
 
-//    Resources
-    Route::resource('categories','CategoryController');
-    Route::resource('subcategories','SubcategoryController');
-    Route::resource('products','ProductController');
+//    Orders
 
+
+
+//    Resources
+    Route::resource('categories', 'CategoryController');
+    Route::resource('subcategories', 'SubcategoryController');
+    Route::resource('products', 'ProductController');
+    Route::resource('orders', 'OrderController');
 //    Demo Template
     Route::prefix('demo')->name('demo.')->group(function () {
         Route::get('/elements', 'DemoController@elements')->name('elements');

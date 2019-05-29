@@ -14,7 +14,7 @@
         @endcomponent
         <div class="panel panel-row">
             <div class="panel-heading main-head">
-                <h1 class="section-name"> Результаты поиска </h1>
+                <h1 class="section-name"> Результаты поиска по {{ $search }} </h1>
             </div>
 
             <div class="panel-body">
@@ -65,7 +65,7 @@
                             <div class="margin-border-mb"></div>
                         </li>
                     @empty
-                        <li class="text-center">Сожалеем, но ничего не найдено.</li>
+                        <li class="text-center">Сожалеем, по запросу {{ $search }} но ничего не найдено.</li>
                     @endforelse
                 </ul>
             </div>

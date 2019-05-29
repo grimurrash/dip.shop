@@ -56,7 +56,7 @@ class BasketController extends Controller
                     foreach ($basket as $item) {
                         $total += $item['count'] * $item['price'];
                     }
-                    $text .= ' ' . $total . ' р';
+                    $text .= ' ' . $total . ' ₽';
                     return response()->json([
                         'status' => true,
                         'text' => $text,
@@ -99,7 +99,7 @@ class BasketController extends Controller
                     <div class="col-xs-3 col-sm-2"><img src="' . $product->image->url . '"></div>
                     <div class="col-xs-4 col-sm-5"><a href="' . route('catalog.products.show', $product) . '">' . $product->name . '</a></div>
                     <div class="col-xs-2 text-right"><span>' . $item['count'] . ' шт.</span></div>
-                    <div class="col-xs-3 text-nowrap"><b>' . $product->price . ' Р </b></div>
+                    <div class="col-xs-3 text-nowrap"><b>' . $product->price . ' ₽ </b></div>
                 </div><hr>';
         }
         $text .= '<div class="row">

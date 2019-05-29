@@ -62,9 +62,11 @@
     <div class="form-group">
         <label for="details">Детали</label>
         <textarea id="details" class="form-control {{ $errors->has('details') ? ' is-invalid' : '' }}"
-                  placeholder="Введите детали о товаре (не более 255 символов)"
-                  name="details">{{ old('details',$product->details) }}</textarea>
+                  placeholder="Введите детали о товаре (не более 255 символов). Детали должны быть формата: Характеристика:значение;характеристика:значение...."
+                  name="details">{{ old('details') }}</textarea>
+        <div class="form-auth-small small" style="margin-top: 6px">Детали должны быть формата: Характеристика:значение;характеристика:значение....</div>
     </div>
+
     @if ($errors->has('details'))
         <div class="alert alert-danger alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert"

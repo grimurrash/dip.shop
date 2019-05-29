@@ -75,11 +75,12 @@
                 @endguest
 
             </ul>
-
+            @guest
             <div class="logon"></div>
             <div class="hidden_content" id="login_reg_popup_title">
                 <button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>
             </div>
+
             <div class="hidden_content" id="login_reg_popup_content">
                 <ul class="nav nav-tabs link">
                     <li class="active"><a aria-expanded="true" href="#login" data-toggle="tab"
@@ -105,6 +106,7 @@
                     </div>
                 </div>
             </div>
+            @endguest
             <!--/noindex-->
 
 

@@ -13963,132 +13963,97 @@ ul.bx-soa-pp-list li {
 
 @-webkit-keyframes changeCostSign {
 
-0
-{
-    opacity: 1
-}
+    0% {
+        opacity: 1
+    }
 
-40
-%
-{
-    opacity: 0
-}
+    40% {
+        opacity: 0
+    }
 
-60
-%
-{
-    opacity: 0
-}
+    60% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 1
-}
+    100% {
+        opacity: 1
+    }
 }
 
 @-moz-keyframes changeCostSign {
 
-0
-{
-    opacity: 1
-}
+    0% {
+        opacity: 1
+    }
 
-40
-%
-{
-    opacity: 0
-}
+    40% {
+        opacity: 0
+    }
 
-60
-%
-{
-    opacity: 0
-}
+    60% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 1
-}
+    100% {
+        opacity: 1
+    }
 }
 
 @-ms-keyframes changeCostSign {
 
-0
-{
-    opacity: 1
-}
+    0% {
+        opacity: 1
+    }
 
-40
-%
-{
-    opacity: 0
-}
+    40% {
+        opacity: 0
+    }
 
-60
-%
-{
-    opacity: 0
-}
+    60% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 1
-}
+    100% {
+        opacity: 1
+    }
 }
 
 @-o-keyframes changeCostSign {
 
-0
-{
-    opacity: 1
-}
+    0% {
+        opacity: 1
+    }
 
-40
-%
-{
-    opacity: 0
-}
+    40% {
+        opacity: 0
+    }
 
-60
-%
-{
-    opacity: 0
-}
+    60% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 1
-}
+    100% {
+        opacity: 1
+    }
 }
 
 @keyframes changeCostSign {
 
-0
-{
-    opacity: 1
-}
+    0% {
+        opacity: 1
+    }
 
-40
-%
-{
-    opacity: 0
-}
+    40% {
+        opacity: 0
+    }
 
-60
-%
-{
-    opacity: 0
-}
+    60% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 1
-}
+    100% {
+        opacity: 1
+    }
 }
 
 .bx-sls.form-control {
@@ -14153,16 +14118,13 @@ ul.bx-soa-pp-list li {
 
 @-webkit-keyframes animationBorderStepOpacity {
 
-0
-{
-    opacity: 0
-}
+    0% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 100
-}
+    100% {
+        opacity: 100
+    }
 }
 
 @-moz-keyframes animationBorderStepOpacity {
@@ -14181,44 +14143,35 @@ ul.bx-soa-pp-list li {
 
 @-ms-keyframes animationBorderStepOpacity {
 
-0
-{
-    opacity: 0
-}
+    0% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 100
-}
+    100% {
+        opacity: 100
+    }
 }
 
 @-o-keyframes animationBorderStepOpacity {
 
-0
-{
-    opacity: 0
-}
+    0% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 100
-}
+    100% {
+        opacity: 100
+    }
 }
 
 @keyframes animationBorderStepOpacity {
 
-0
-{
-    opacity: 0
-}
+    0% {
+        opacity: 0
+    }
 
-100
-%
-{
-    opacity: 100
-}
+    100% {
+        opacity: 100
+    }
 }
 
 ymaps h3 {

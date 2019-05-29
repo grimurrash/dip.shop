@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(document).on("keyup", "#password-again", function (event) {
         refreshSavePass();
     });
-    $('.cabinet-tabs').tabdrop({text: '<span class="icon-product"></span>'});
+    // $('.cabinet-tabs').tabdrop({text: '<span class="icon-product"></span>'});
     $('#personForm').validate({
         submitHandler: function (form) {
             form.submit();
