@@ -13,17 +13,6 @@
             @slot('active')Корзина @endslot
         @endcomponent
         <form method="post" action="/cart/" name="basket_form" id="basket_form">
-            <input type="hidden" id="column_headers"
-                   value="NAME,DELETE,DELAY,PRICE,QUANTITY,SUM,PROPERTY_REITING_VALUE,PROPERTY_ADDING_PICTURE_SMALL_VALUE">
-            <input type="hidden" id="offers_props" value="">
-            <input type="hidden" id="action_var" value="basketAction">
-            <input type="hidden" id="quantity_float" value="N">
-            <input type="hidden" id="count_discount_4_all_quantity" value="N">
-            <input type="hidden" id="price_vat_show_value" value="N">
-            <input type="hidden" id="hide_coupon" value="N">
-            <input type="hidden" id="use_prepayment" value="N">
-            <input type="hidden" id="auto_calculation" value="Y">
-
 
             <?php
             if (session()->get('basket') !== null) {
@@ -33,7 +22,7 @@
             }
             $total = 0;
             foreach ($basket as $item) {
-                $total += $item['count'] * $item['product']['price'];
+                $total += $item['count'] * $item['price'];
             }
             ?>
             <div class="panel basket_content">
@@ -83,20 +72,22 @@
                                                 </div>
                                                 <div class="input-group spinner">
                                                     <span class="input-group-btn">
-                                                        <a href="{{ route('cart.remove', $product) }}" class="btn btn-default btn-spin">
+                                                        <a href="{{ route('cart.remove', $product) }}"
+                                                           class="btn btn-default btn-spin">
                                                             <span class="glyphicon glyphicon-minus"></span>
                                                         </a>
                                                     </span>
                                                     <input type="text" class="form-control js_amt" data-min="1"
                                                            value="{{ $item['count'] }}">
                                                     <span class="input-group-btn">
-                                                        <a href="{{ route('cart.add', $product) }}" class="btn btn-default btn-spin">
+                                                        <a href="{{ route('cart.add', $product) }}"
+                                                           class="btn btn-default btn-spin">
                                                             <span class="glyphicon glyphicon-plus"></span>
                                                         </a>
                                                     </span>
                                                 </div>
                                                 <a data-brand="DIGMA" class="ga_remove"
-                                                   href="{{ route('cart.delete') }}">Удалить</a>
+                                                   href="{{ route('cart.delete', $product) }}">Удалить</a>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 row_bottom">
@@ -123,8 +114,8 @@
                                         </div>
                                         <div class="container-fluid row sum">
                                             <div class="col-xs-12">
-                                                <a href="/order/" class="ga_checkout btn btn-primary btn-lg">ОФОРМИТЬ
-                                                    ЗАКАЗ</a>
+                                                <a href="{{ route('order.create') }}"
+                                                   class="ga_checkout btn btn-primary btn-lg">ОФОРМИТЬ ЗАКАЗ</a>
                                             </div>
                                             <div class="col-xs-5 text-right text-nowrap padding0">
 

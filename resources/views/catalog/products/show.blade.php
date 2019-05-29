@@ -44,17 +44,17 @@
                                 <div id="gallerySlider" class="carousel slide" data-interval="false">
                                     <div class="carousel-inner">
                                         <a class="item active pic"
-                                           href="https://img.positronica.ru/items/1144212_v01_b.jpg"
+                                           href="{{ $product->image->url }}"
                                            data-toggle="lightbox" data-gallery="multiimages" data-slide-number="0">
-                                            <img src="https://img.positronica.ru/items/1144212_v01_b.jpg"
+                                            <img src="{{ $product->image->url }}"
                                                  class="img-responsive"
-                                                 alt="Материнская плата MSI H310M PRO-VH PLUS Soc-1151v2 mATX - фото 1"
-                                                 title="Материнская плата MSI H310M PRO-VH PLUS Soc-1151v2 mATX - фото 1">
+                                                 alt="{{ $product->image->name }}"
+                                                 title="{{ $product->image->name }}">
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="hidden-lg col-md-12 buy-block" id="buy-block-xs">
+                            <div class="hidden-lg col-md-12 buy-block" id="buy-block-xs" style="border-bottom: 1px solid #d8d8d8">
                                 <div class="row hidden-xs" itemprop="aggregateRating" itemscope=""
                                      itemtype="http://schema.org/AggregateRating">
                                     <div class="col-xs-3 item_rating">
@@ -87,108 +87,22 @@
                                          itemtype="http://schema.org/Offer">
                                         <div class="col-sm-5 col-xs-6 price">
                                             <div class="main" itemprop="price">
-                                                3 600 ₽
+                                                {{ $product->price }} ₽
                                             </div>
                                             <meta itemprop="priceCurrency" content="RUB">
-                                            <div class="block">
-                                                <div class="old"></div>
-                                                <div class="diff hidden-xs"></div>
-                                            </div>
                                         </div>
                                         <div class="col-sm-7 hidden-xs buttons">
                                             <a class="ga btn btn-primary btn-lg btn-block js_add2basket"
-                                               data-id="413339">Купить </a>
-                                            <link itemprop="availability" href="http://schema.org/InStock"
-                                                  content="В наличии">
-                                        </div>
-                                        <div class="col-xs-6 visible-xs-block">
-                                            <div class="item_rating row">
-                                                <div class="rating-container rating-xs rating-animate stars-styled">
-                                                    <div class="rating">
-                                        <span class="empty-stars">
-                                            <span class="star"><i
-                                                        class="glyphicon glyphicon-star-empty"></i></span><span
-                                                    class="star"><i
-                                                        class="glyphicon glyphicon-star-empty"></i></span><span
-                                                    class="star"><i
-                                                        class="glyphicon glyphicon-star-empty"></i></span><span
-                                                    class="star"><i
-                                                        class="glyphicon glyphicon-star-empty"></i></span><span
-                                                    class="star"><i class="glyphicon glyphicon-star-empty"></i></span>
-                                        </span>
-                                                        <span style="width: 0%!important;" class="filled-stars">
-                                            <span class="star"><i class="glyphicon glyphicon-star"></i></span><span
-                                                                    class="star"><i
-                                                                        class="glyphicon glyphicon-star"></i></span><span
-                                                                    class="star"><i
-                                                                        class="glyphicon glyphicon-star"></i></span><span
-                                                                    class="star"><i
-                                                                        class="glyphicon glyphicon-star"></i></span><span
-                                                                    class="star"><i
-                                                                        class="glyphicon glyphicon-star"></i></span>
-                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="price row text-right">
-                                            </div>
+                                               data-id="{{ $product->id }}">Купить </a>
                                         </div>
                                     </div>
                                     <div class="visible-xs-block three-butons">
                                         <div class="col-xs-12">
                                             <div class="buy">
-                                                <a class="btn btn-primary js_add2basket" data-id="413339">КУПИТЬ</a>
-                                            </div>
-                                            <div class="services">
-                                                <a class="btn btn-service js_add2compare" data-id="413338">
-                                                    <span class="glyphicon icon-product-add-comparison"></span>
-                                                </a>
-                                                <a class="btn btn-service js_add2wishlist" data-id="413339">
-                                                    <span class="glyphicon glyphicon-heart-empty"></span>
-                                                </a>
+                                                <a class="btn btn-primary" data-id="{{ $product->id }}">КУПИТЬ</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="visible-xs-block">
-                                        <div class="col-xs-12">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="section">
-                                    <div class="section-row">
-                                    </div>
-
-                                    <div class="section-row delivery-time">
-                                        <div class="row col-xs-5">
-                                <span class="icon-product-doctav">
-                                    <span class="path1"></span><span class="path2"></span><span
-                                            class="path3"></span><span class="path4"></span><span class="path5"></span>
-                                </span>
-                                            Доставка
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <div class="loader"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="section hidden-xs">
-                                    <div class="buttons-row">
-                                        <a class="btn btn-service js_add2compare" data-id="413338">
-                                            <span class="glyphicon icon-product-add-comparison"></span>
-                                            <span class="text">Сравнить</span>
-                                        </a>
-                                        <a class="btn btn-service js_add2wishlist" data-id="413339">
-                                            <span class="glyphicon glyphicon-heart-empty"></span>
-                                            <span class="text">В список желаний</span>
-                                        </a>
-                                        <a class="btn btn-service js_print">
-                                            <span class="glyphicon icon-product-print"></span>
-                                            <span class="text">Распечатать</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="article">
-                                    Артикул: <span>1144212</span>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
@@ -203,12 +117,12 @@
                                         <a aria-expanded="true" href="#characteristics"
                                            data-toggle="tab">Характеристики</a>
                                     </li>
-                                    <li class="">
-                                        <a aria-expanded="false" href="#opinion" id="btn_opinion" data-toggle="tab"
-                                           data-xmlid="442506">
-                                            Отзывы <span class="count">1</span>
-                                        </a>
-                                    </li>
+                                    {{--<li class="">--}}
+                                        {{--<a aria-expanded="false" href="#opinion" id="btn_opinion" data-toggle="tab"--}}
+                                           {{--data-xmlid="442506">--}}
+                                            {{--Отзывы <span class="count">1</span>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
                                 </ul>
                                 <div id="product-tabs" class="tab-content">
                                     <div class="tab-pane fade active in" id="characteristics">
@@ -325,19 +239,18 @@
                                         </div>
                                         <meta itemprop="priceCurrency" content="RUB">
                                     </div>
+                                    <div class="col-sm-7 hidden-xs buttons">
+                                        <a class="ga btn btn-primary btn-lg btn-block js_add2basket"
+                                           data-category="{{ $product->category->title }}"
+                                           data-name="{{ $product->name }}"
+                                           data-price="{{ $product->price }}" data-id="{{ $product->id }}">Купить </a>
+                                    </div>
                                 </div>
                                 <div class="row visible-xs-block three-butons">
                                     <div class="col-xs-12">
                                         <div class="buy">
-                                            <a class="btn btn-primary js_add2basket" data-id="413339">КУПИТЬ</a>
-                                        </div>
-                                        <div class="services">
-                                            <a class="btn btn-service js_add2compare" data-id="413338">
-                                                <span class="glyphicon icon-product-add-comparison"></span>
-                                            </a>
-                                            <a class="btn btn-service js_add2wishlist" data-id="413339">
-                                                <span class="glyphicon glyphicon-heart-empty"></span>
-                                            </a>
+                                            <a class="btn btn-primary js_add2basket"
+                                               data-id="{{ $product->id }}">КУПИТЬ</a>
                                         </div>
                                     </div>
                                 </div>
@@ -346,43 +259,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="section">
-                                <div class="section-row">
-                                </div>
-
-                                <div class="section-row delivery-time">
-                                    <div class="row col-xs-5">
-                                    <span class="icon-product-doctav">
-                                        <span class="path1"></span><span class="path2"></span><span
-                                                class="path3"></span><span class="path4"></span><span
-                                                class="path5"></span>
-                                    </span>
-                                        Доставка
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <div class="loader"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section hidden-xs">
-                                <div class="buttons-row">
-                                    <a class="btn btn-service js_add2compare" data-id="413338">
-                                        <span class="glyphicon icon-product-add-comparison"></span>
-                                        <span class="text">Сравнить</span>
-                                    </a>
-                                    <a class="btn btn-service js_add2wishlist" data-id="413339">
-                                        <span class="glyphicon glyphicon-heart-empty"></span>
-                                        <span class="text">В список желаний</span>
-                                    </a>
-                                    <a class="btn btn-service js_print">
-                                        <span class="glyphicon icon-product-print"></span>
-                                        <span class="text">Распечатать</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="article">
-                                Артикул: <span>1144212</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -390,15 +266,14 @@
         </div>
         <div class="well hidden-xs hidden-sm tags">
             <div class="block">
-                <div class="h2">Мышь</div>
-                <p>Купите Мышь в магазинах Позитроника с доставкой по Казани. Мышь: характеристики, отзывы
-                    покупателей, описание, обзоры и аксессуары.</p>
+                <div class="h2">{{ $product->name }}</div>
+                <p>Купите {{ $product->name }} в магазинах Позитроника с доставкой по Казани. {{ $product->name }}:
+                    характеристики, отзывы покупателей, описание</p>
                 <div><br/></div>
-                <p><strong>Производитель оставляет за собой право изменять характеристики товара, его внешний
-                        вид и комплектность без предварительного уведомления продавца.</strong></p>
+                <p><strong>Производитель оставляет за собой право изменять характеристики товара, его внешний вид и
+                        комплектность без предварительного уведомления продавца.</strong></p>
                 <p><strong>Предложение действительно, пока товар в наличии на складе.</strong></p></div>
         </div>
-
     </div>
 @endsection
 

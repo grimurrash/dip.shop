@@ -43,6 +43,13 @@ class SideController extends Controller
         return view('pages.company');
     }
 
+
+    public function search(Request $request){
+        $search = $request->s;
+        $products = Product::where('name','LIKE',"%$search%")->paginate(12);
+        return view('catalog.search',compact('search','products'));
+    }
+
     public function admin()
     {
         return view('admin.index',[

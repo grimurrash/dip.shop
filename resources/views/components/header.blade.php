@@ -9,11 +9,11 @@
                                                     class="img-responsive" alt="logo"></a>
         </div>
         <div class='col-sm-7 col-md-5 col-lg-6'>
-            <form action="/search/">
+            <form action="{{ route('search') }}">
                 <div class="input-group" id="title-search">
 
                     <input placeholder='ПОИСК ТОВАРА' type="search" class="form-control" id="title-search-input"
-                           name="q"
+                           name="s"
                            value=""
                            maxlength="50" autocomplete="off">
                     <span class="input-group-btn">

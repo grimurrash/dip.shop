@@ -17,7 +17,7 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-5">
                 <p class="h5 green">ИНФОРМАЦИЯ</p>
-                <a class="opacity7" href="/catalog/">Каталог товаров</a>
+                <a class="opacity7" href="{{ route('catalog.index') }}">Каталог товаров</a>
                 <a class="opacity7" href="{{ route('politika') }}">Политика персональных
                     данных</a>
             </div>

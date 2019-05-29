@@ -46,7 +46,7 @@
                     {{ count($basket) }} позиций на сумму <?php
                         $total = 0;
                         foreach ($basket as $item) {
-                            $total += $item['count'] * $item['product']['price'];
+                            $total += $item['count'] * $item['price'];
                         }
                         echo $total;
                      ?> ₽

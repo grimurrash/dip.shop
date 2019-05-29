@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Session;
 class BasketController extends Controller
 {
 
-    public function addProduct(Product $product, Request $request){
+    public function addProduct(Product $product, Request $request)
+    {
         $basket = $request->session()->get('basket');
         if (!is_null($basket)) {
             for ($i = 0; $i < count($basket); $i++) {
@@ -22,15 +23,17 @@ class BasketController extends Controller
         }
         return view('catalog.cart');
     }
-    public function removeProduct(Product $product, Request $request){
+
+    public function removeProduct(Product $product, Request $request)
+    {
         $basket = $request->session()->get('basket');
 
         if (!is_null($basket)) {
             for ($i = 0; $i < count($basket); $i++) {
                 if ($basket[$i]['product_id'] == $product->id) {
                     $basket[$i]['count']--;
-                    if($basket[$i]['count'] <= 0){
-                        array_splice($basket,$i,1);
+                    if ($basket[$i]['count'] <= 0) {
+                        array_splice($basket, $i, 1);
                     }
                     $request->session()->put('basket', $basket);
                 }
@@ -38,6 +41,7 @@ class BasketController extends Controller
         }
         return view('catalog.cart');
     }
+
     public function addItem(Product $product, Request $request)
     {
         $basket = $request->session()->get('basket');
@@ -50,7 +54,7 @@ class BasketController extends Controller
                     $text = count($basket) . ' позиций на сумму';
                     $total = 0;
                     foreach ($basket as $item) {
-                        $total += $item['count'] * $item['product']['price'];
+                        $total += $item['count'] * $item['price'];
                     }
                     $text .= ' ' . $total . ' р';
                     return response()->json([
@@ -64,18 +68,14 @@ class BasketController extends Controller
         }
         $basket[] = array(
             'product_id' => $product->id,
-            'product' => [
-                'name' => $product->name,
-                'price' => $product->price,
-                'image' => $product->image->url,
-            ],
+            'price' => $product->price,
             'count' => 1,
         );
         $request->session()->put('basket', $basket);
         $text = count($basket) . ' позиций на сумму';
         $total = 0;
         foreach ($basket as $item) {
-            $total += $item['count'] * $item['product']['price'];
+            $total += $item['count'] * $item['price'];
         }
         $text .= ' ' . $total . ' р';
         return response()->json([
@@ -116,18 +116,23 @@ class BasketController extends Controller
         ])->setStatusCode('200', 'Basket list');
     }
 
-    public function show(){
+    public function show()
+    {
         return view('catalog.cart');
     }
 
-    public function destroy(Request $request)
+    public function destroy(Request $request, Product $product)
     {
-        $request->session()->forget('basket');
+        $basket = $request->session()->get('basket');
+
+        if (!is_null($basket)) {
+            for ($i = 0; $i < count($basket); $i++) {
+                if ($basket[$i]['product_id'] == $product->id) {
+                    array_splice($basket, $i, 1);
+                    $request->session()->put('basket', $basket);
+                }
+            }
+        }
         return view('catalog.cart');
-    }
-
-    public function removeItem(Product $product, Request $request)
-    {
-
     }
 }

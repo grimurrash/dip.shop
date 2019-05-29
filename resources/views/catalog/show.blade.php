@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title',"Купить Телевизоры   в Казани, цена на Телевизоры  в интернет-магазине Позитроника")
+@section('title',"Купить ".$subcategory->title." в Казани, цена на ".$subcategory->title."  в интернет-магазине Позитроника")
 @section('description','Интернет-магазин Позитроника предлагает большой выбор электроники и бытовой техники по выгодным ценам в Казани')
 
 @push('styles')
-    <link href="{{ asset('css/catalog.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
+    <link href="{{ asset('css/products.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -13,11 +13,11 @@
         @component('components.breadcrumb')
             @slot('parent_href') {{ route('catalog.index') }} @endslot
             @slot('parent') Каталог @endslot
-            @slot('active') Телевизоры @endslot
+            @slot('active') {{ $subcategory->title }} @endslot
         @endcomponent
         <div class="panel panel-row">
             <div class="panel-heading main-head">
-                <h1 class="section-name">Телевизоры </h1>
+                <h1 class="section-name">{{ $subcategory->title }} </h1>
             </div>
 
             <div class="panel-body">

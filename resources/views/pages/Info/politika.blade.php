@@ -4,7 +4,9 @@
 @section('title')
     Политика в отношении обработки персональных данных - {{ config('app.name', 'Мир котлов') }}
 @endsection
-
+@push('styles')
+    <link href="{{ asset('css/pages.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
+@endpush
 @section('content')
     @include('components.wrap_menu')
     <div class="content">
