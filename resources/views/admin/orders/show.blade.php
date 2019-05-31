@@ -119,7 +119,7 @@
                                             <td>{{ $orderItem->product->name }}</td>
                                             <td>{{ $orderItem->product->price }} ₽</td>
                                             <td>{{ $orderItem->product->quantity }} шт.</td>
-                                            <td>{{ $orderItem->count }} шт.</td>
+                                            <td>{{ $orderItem->count }} шт. {{ $order->status === 'В процессе' ? '(В обработке)' : '' }} </td>
                                             <td>{{ $orderItem->price() }}</td>
                                         </tr>
                                     @empty

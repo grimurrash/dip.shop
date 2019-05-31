@@ -191,7 +191,6 @@ class ProductController extends Controller
             'new_item' => $request->new_item == 'on' ? 1 : 0,
             'bestsellers' => $request->bestsellers == 'on' ? 1 : 0,
         ]);
-        dd($product);
         Session::flash('message_success', 'Товар «' . $product->name . '» успешно создан');
         return redirect()->route('admin.products.index');
     }

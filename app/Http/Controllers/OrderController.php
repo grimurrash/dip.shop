@@ -55,12 +55,12 @@ class OrderController extends Controller
             'fio.regex' => 'Неверный формат ФИО',
         ]);
         if ($valid->fails()) {
-            $request->session()->flush('errors', 'Ошибка при оформлении заявки. Не все поля заполнены или введены не верно');
+            $request->session()->flash('errors', 'Ошибка при оформлении заявки. Не все поля заполнены или введены не верно');
             return redirect()->back()->withErrors($valid->errors())->withInput();
         }
         $basket = $request->session()->get('basket');
         if (is_null($basket) || count($basket) < 1) {
-            $request->session()->flush('errors', 'Ошибка при оформлении заявки. Корзина не должна быть пустой');
+            $request->session()->flash('errors', 'Ошибка при оформлении заявки. Корзина не должна быть пустой');
             return redirect()->back()->withErrors($valid->errors())->withInput();
         }
 
@@ -74,16 +74,13 @@ class OrderController extends Controller
 
         foreach ($basket as $item) {
             $product = Product::find($item['product_id']);
-            $product->update([
-                'quantity' => $product->quantity - $item['count']
-            ]);
             OrderItem::create([
-                'order_id'=>$order->id,
-                'product_id'=>$product->id,
-                'count'=>$item['count']
+                'order_id' => $order->id,
+                'product_id' => $product->id,
+                'count' => $item['count']
             ]);
         }
-        $request->session()->put('orderId',$order->id);
+        $request->session()->put('orderId', $order->id);
         $request->session()->forget('basket');
         return redirect()->route('order.end');
     }
@@ -96,7 +93,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        return view('admin.orders.show',compact('order'));
+        return view('admin.orders.show', compact('order'));
     }
 
     /**
@@ -119,17 +116,22 @@ class OrderController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        if($order->status === 'В ожидании'){
+        if ($order->status === 'В ожидании') {
+            foreach ($order->items as $item) {
+                $item->product->update([
+                    'quantity' => $item->product->quantity - $item->count
+                ]);
+            }
             $order->update([
-                'status'=>'В процессе'
+                'status' => 'В процессе'
             ]);
-        }else if($order->status === 'В процессе'){
+        } else if ($order->status === 'В процессе') {
             $order->update([
-                'status'=>'Выполнен'
+                'status' => 'Выполнен'
             ]);
         }
-        $request->session()->flush('message_success','Статус заказа изменен');
-        return redirect()->route('admin.orders.show',$order);
+        $request->session()->flash('message_success', 'Статус заказа изменен');
+        return redirect()->back();
     }
 
     /**
@@ -141,9 +143,9 @@ class OrderController extends Controller
     public function destroy(Order $order, Request $request)
     {
         $order->update([
-            'status'=>'Отменен'
+            'status' => 'Отменен'
         ]);
-        $request->session()->flush('message_success','Заказ отменен');
-        return redirect()->route('admin.orders.show',$order);
+        $request->session()->flash('message_success', 'Заказ отменен');
+        return redirect()->route('admin.orders.show', $order);
     }
 }
