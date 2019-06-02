@@ -178,7 +178,7 @@ class ProductController extends Controller
             $image = $product->image;
         }
 
-        $product = $product->update([
+        $product->update([
             'name' => $request->name,
             'subcategory_id' => $request->subcategory_id,
             'slug' => Str::slug(mb_substr($request->name, 0, 30)),

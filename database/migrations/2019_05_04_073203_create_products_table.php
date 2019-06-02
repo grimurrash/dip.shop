@@ -25,9 +25,9 @@ class CreateProductsTable extends Migration
             $table->boolean('new_item')->default(0);
             $table->boolean('bestsellers')->default(0);
             $table->unsignedBigInteger('image_id')->nullable();
-            $table->foreign('image_id')->references('id')->on('images')->onDelete('set null');
+            $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
             $table->unsignedBigInteger('subcategory_id')->nullable();
-            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('set null');
+            $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
             $table->timestamps();
         });
         \Illuminate\Support\Facades\Artisan::call('db:seed');
