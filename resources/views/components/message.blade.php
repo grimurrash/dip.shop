@@ -5,7 +5,7 @@
         <i class="fa fa-check-circle"></i>  {{ session('message_success') }}
     </div>
 @endif
-@if (session('message_error'))ы
+@if (session('message_error'))
     <div class="alert alert-danger alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>

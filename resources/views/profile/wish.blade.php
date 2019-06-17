@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Бытовая техника и электроника в Казани - интернет-магазин {{ config('app.name', 'Мир котлов') }}
+    Теплогазснаб - интернет-магазин котлов в Казани {{ config('app.name', 'Мир котлов') }}
 @endsection
 @push('styles')
     <link href="{{ asset('css/profile.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
@@ -146,21 +146,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js"></script>
     <script type="text/javascript"
             src="/local/templates/components/system.field.edit/script.min.js"></script>
     <script type="text/javascript"

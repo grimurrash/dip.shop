@@ -52,5 +52,5 @@
 
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
 @endpush

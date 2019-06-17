@@ -90,7 +90,7 @@ class SubcategoryController extends Controller
     public function show(Subcategory $subcategory)
     {
         return view('catalog.show', [
-            'products' => Product::where('subcategory_id',$subcategory->id)->paginate(12),
+            'products' => Product::where('disabled',0)->where('subcategory_id',$subcategory->id)->paginate(12),
             'subcategory' => $subcategory
         ]);
     }

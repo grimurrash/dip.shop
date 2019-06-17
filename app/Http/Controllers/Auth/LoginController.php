@@ -7,7 +7,6 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\MessageBag;
 use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
@@ -113,7 +112,9 @@ class LoginController extends Controller
         }
         if (!$this->attemptLogin($request)) {
             $this->incrementLoginAttempts($request);
-            return redirect()->back()->withErrors(ValidationException::withMessages(['email'=>'Неправильный логин или пароль']));
+            throw ValidationException::withMessages([
+                $this->username() => 'Неправильный логин или пароль',
+            ]);
         }
         $user = $this->guard()->user();
         if($user->role !== 'admin'){

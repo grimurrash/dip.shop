@@ -56,42 +56,42 @@
                                            readonly>
                                 </div>
                             </div>
-                            @if($order->status != 'Выполнен')
-                                <div class="panel-footer text-center">
-                                    @if($order->status == 'В ожидании')
-                                        <button onclick="event.preventDefault();document.getElementById('order-primary-{{ $order->id }}').submit();"
-                                                type="button" class="btn btn-primary">Принять
-                                        </button>
-                                        <form id="order-primary-{{ $order->id }}"
-                                              action="{{ route('admin.orders.update', $order ) }}"
-                                              method="post"
-                                              style="display: none;">
-                                            <input type="hidden" name="_method" value="PATCH"/>
-                                        </form>
+                            <div class="panel-footer text-center">
+                                @if($order->status == 'Выполнен' || $order->status == 'Отменен')
+                                    <a class="btn btn-danger" href="{{ route('admin.orders.delete',$order) }}">Удалить</a>
+                                @elseif($order->status == 'В ожидании')
+                                    <button onclick="event.preventDefault();document.getElementById('order-primary-{{ $order->id }}').submit();"
+                                            type="button" class="btn btn-primary">Принять
+                                    </button>
+                                    <form id="order-primary-{{ $order->id }}"
+                                          action="{{ route('admin.orders.update', $order ) }}"
+                                          method="post"
+                                          style="display: none;">
+                                        <input type="hidden" name="_method" value="PATCH"/>
+                                    </form>
 
 
-                                        <button onclick="event.preventDefault();document.getElementById('order-delete-{{ $order->id }}').submit();"
-                                                type="button" class="btn btn-danger">Отменить
-                                        </button>
-                                        <form id="order-delete-{{ $order->id }}"
-                                              action="{{ route('admin.orders.destroy', $order ) }}"
-                                              method="post"
-                                              style="display: none;">
-                                            <input type="hidden" name="_method" value="delete"/>
-                                        </form>
-                                    @elseif($order->status == 'В процессе')
-                                        <button onclick="event.preventDefault();document.getElementById('order-success-{{ $order->id }}').submit();"
-                                                type="button" class="btn btn-success">Заказ выполнен
-                                        </button>
-                                        <form id="order-success-{{ $order->id }}"
-                                              action="{{ route('admin.orders.update', $order ) }}"
-                                              method="post"
-                                              style="display: none;">
-                                            <input type="hidden" name="_method" value="PATCH"/>
-                                        </form>
-                                    @endif
-                                </div>
-                            @endif
+                                    <button onclick="event.preventDefault();document.getElementById('order-delete-{{ $order->id }}').submit();"
+                                            type="button" class="btn btn-danger">Отменить
+                                    </button>
+                                    <form id="order-delete-{{ $order->id }}"
+                                          action="{{ route('admin.orders.destroy', $order ) }}"
+                                          method="post"
+                                          style="display: none;">
+                                        <input type="hidden" name="_method" value="delete"/>
+                                    </form>
+                                @elseif($order->status == 'В процессе')
+                                    <button onclick="event.preventDefault();document.getElementById('order-success-{{ $order->id }}').submit();"
+                                            type="button" class="btn btn-success">Заказ выполнен
+                                    </button>
+                                    <form id="order-success-{{ $order->id }}"
+                                          action="{{ route('admin.orders.update', $order ) }}"
+                                          method="post"
+                                          style="display: none;">
+                                        <input type="hidden" name="_method" value="PATCH"/>
+                                    </form>
+                                @endif
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-8">

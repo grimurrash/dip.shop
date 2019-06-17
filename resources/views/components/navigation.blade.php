@@ -54,25 +54,7 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                @guest
-                    <li><a id="logon"
-                           data-toggle="popover"
-                           data-object="login"
-                           data-html="true"
-                           data-container=".logon"
-                           data-placement="bottom"
-                           data-class-popover="logonPopoverConfig"
-                           data-trigger="manual"
-                           rel="nofollow">ВХОД</a></li>
-                @else
-                    <li><a href="{{ route('profile.index') }}" id="personal" rel="nofollow">ЛИЧНЫЙ КАБИНЕТ</a></li>
-                    <li><a href="{{ route('logout') }}" rel="nofollow" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">ВЫХОД</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </li>
-                @endguest
+
 
             </ul>
             @guest

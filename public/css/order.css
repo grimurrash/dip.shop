@@ -1,4 +1,4 @@
-/* Start:/local/templates/main_posi/css/positronica.min.css?1544189095147337*/
+/* Start:/local/templates/main_posi/css/teplo.min.css?1544189095147337*/
 @charset "UTF-8";
 @font-face {
     font-family: 'Roboto';
@@ -1560,7 +1560,7 @@ input, button, select, textarea {
 }
 
 a {
-    color: #76c043;
+    color: #6365c0;
     text-decoration: none
 }
 
@@ -1760,11 +1760,11 @@ mark, .mark {
 }
 
 .text-primary {
-    color: #76c043
+    color: #6365c0
 }
 
 a.text-primary:hover, a.text-primary:focus {
-    color: #5e9c34
+    color: #6365c0
 }
 
 .text-success {
@@ -1804,11 +1804,11 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .bg-primary {
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-    background-color: #5e9c34
+    background-color: #6365c0
 }
 
 .bg-success {
@@ -3180,7 +3180,7 @@ output {
 }
 
 .form-control:focus {
-    border-color: #76c043;
+    border-color: #6365c0;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6)
@@ -3651,7 +3651,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 }
 
 .btn:hover, .btn:focus, .btn.focus {
-    color: #76c043;
+    color: #6365c0;
     text-decoration: none
 }
 
@@ -3675,31 +3675,31 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default {
-    color: #76c043;
+    color: #6365c0;
     background-color: #fff;
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .btn-default:focus, .btn-default.focus {
-    color: #76c043;
+    color: #6365c0;
     background-color: #e6e6e6;
     border-color: #3c6221
 }
 
 .btn-default:hover {
-    color: #76c043;
+    color: #6365c0;
     background-color: #e6e6e6;
-    border-color: #5a9432
+    border-color: #6365c0
 }
 
 .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #76c043;
+    color: #6365c0;
     background-color: #e6e6e6;
-    border-color: #5a9432
+    border-color: #6365c0
 }
 
 .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-    color: #76c043;
+    color: #6365c0;
     background-color: #d4d4d4;
     border-color: #3c6221
 }
@@ -3710,36 +3710,36 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus {
     background-color: #fff;
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .btn-default .badge {
     color: #fff;
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #76c043;
-    border-color: #76c043
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #5e9c34;
+    background-color: #6365c0;
     border-color: #3c6221
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #5e9c34;
-    border-color: #5a9432
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #5e9c34;
-    border-color: #5a9432
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
@@ -3753,12 +3753,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-    background-color: #76c043;
-    border-color: #76c043
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .btn-primary .badge {
-    color: #76c043;
+    color: #6365c0;
     background-color: #fff
 }
 
@@ -3939,7 +3939,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-link {
-    color: #76c043;
+    color: #6365c0;
     font-weight: normal;
     border-radius: 0
 }
@@ -4105,14 +4105,14 @@ tbody.collapse.in {
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #fff;
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -4545,7 +4545,7 @@ tbody.collapse.in {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eee;
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .nav .nav-divider {
@@ -4581,7 +4581,7 @@ tbody.collapse.in {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: #fff;
-    background-color: #76c043;
+    background-color: #6365c0;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
     cursor: default
@@ -4601,7 +4601,7 @@ tbody.collapse.in {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 .nav-stacked > li {
@@ -5346,8 +5346,8 @@ tbody.collapse.in {
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
     z-index: 3;
     color: #fff;
-    background-color: #76c043;
-    border-color: #76c043;
+    background-color: #6365c0;
+    border-color: #6365c0;
     cursor: default
 }
 
@@ -5474,11 +5474,11 @@ a.label:hover, a.label:focus {
 }
 
 .label-primary {
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #5e9c34
+    background-color: #6365c0
 }
 
 .label-success {
@@ -5524,7 +5524,7 @@ a.label:hover, a.label:focus {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
-    background-color: #76c043;
+    background-color: #6365c0;
     border-radius: 11px
 }
 
@@ -5543,7 +5543,7 @@ a.label:hover, a.label:focus {
 }
 
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-    color: #76c043;
+    color: #6365c0;
     background-color: #fff
 }
 
@@ -5640,7 +5640,7 @@ a.badge:hover, a.badge:focus {
 }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .alert {
@@ -5772,7 +5772,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     line-height: 20px;
     color: #fff;
     text-align: center;
-    background-color: #76c043;
+    background-color: #6365c0;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: width .6s ease;
@@ -5950,8 +5950,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     z-index: 2;
     color: #fff;
-    background-color: #76c043;
-    border-color: #76c043
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > .small {
@@ -6285,26 +6285,26 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .panel-primary {
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #76c043;
-    border-color: #76c043
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #76c043
+    border-top-color: #6365c0
 }
 
 .panel-primary > .panel-heading .badge {
-    color: #76c043;
+    color: #6365c0;
     background-color: #fff
 }
 
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #76c043
+    border-bottom-color: #6365c0
 }
 
 .panel-success {
@@ -7938,7 +7938,7 @@ button::-moz-focus-inner {
 }
 
 .btn.btn-primary:hover {
-    background-color: #4ea521
+    background-color: #6365c0
 }
 
 .btn.btn-danger:hover {
@@ -8003,12 +8003,12 @@ button::-moz-focus-inner {
 
 .nav-tabs.link > li > a, .nav-pills.link > li > a {
     background: 0;
-    color: #76c043;
+    color: #6365c0;
     font-size: 16px
 }
 
 .nav-tabs.link > li > a > span, .nav-pills.link > li > a > span {
-    border-bottom: 1px dotted #76c043
+    border-bottom: 1px dotted #8a8dc0
 }
 
 .nav-tabs.link > li > a:hover > span, .nav-tabs.link > li > a:focus > span, .nav-pills.link > li > a:hover > span, .nav-pills.link > li > a:focus > span {
@@ -8035,7 +8035,7 @@ button::-moz-focus-inner {
 
 .dropdown-toggle .icon-product:before {
     font-size: 12px;
-    color: #76c043;
+    color: #6365c0;
     content: "\e90b"
 }
 
@@ -8052,8 +8052,8 @@ button::-moz-focus-inner {
     display: inline-block;
     width: .7em;
     height: .7em;
-    border-right: .2em solid #76c043;
-    border-top: .2em solid #76c043;
+    border-right: .2em solid #6365c0;
+    border-top: .2em solid #6365c0;
     position: relative
 }
 
@@ -8124,8 +8124,8 @@ button::-moz-focus-inner {
 }
 
 .form-control:focus {
-    -webkit-box-shadow: 0 0 0 1px #76c043;
-    box-shadow: 0 0 0 1px #76c043
+    -webkit-box-shadow: 0 0 0 1px #6365c0;
+    box-shadow: 0 0 0 1px #6365c0
 }
 
 .has-success .form-control {
@@ -8135,9 +8135,9 @@ button::-moz-focus-inner {
 }
 
 .has-success .form-control:focus {
-    border-color: #76c043;
-    -webkit-box-shadow: 0 0 0 1px #76c043;
-    box-shadow: 0 0 0 1px #76c043
+    border-color: #6365c0;
+    -webkit-box-shadow: 0 0 0 1px #6365c0;
+    box-shadow: 0 0 0 1px #6365c0
 }
 
 .has-error .form-control {
@@ -8180,7 +8180,7 @@ button::-moz-focus-inner {
 }
 
 .input-group.date .form-control:focus + .input-group-addon {
-    border-color: #76c043;
+    border-color: #6365c0;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6)
@@ -8681,7 +8681,7 @@ button::-moz-focus-inner {
 }
 
 .slider-selection {
-    background: #76c043
+    background: #6365c0
 }
 
 .slider-handle {
@@ -8701,12 +8701,12 @@ button::-moz-focus-inner {
 }
 
 .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted.focus:active, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.focus:active, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover {
-    background-color: #76c043;
-    border-color: #76c043
+    background-color: #6365c0;
+    border-color: #6365c0
 }
 
 a.dotted {
-    text-decoration: underline dotted #76c043
+    text-decoration: underline dotted #6365c0
 }
 
 .table.collapse.in {
@@ -8719,7 +8719,7 @@ td.collapse.in {
 
 .rating-container.stars-styled .star {
     text-shadow: none;
-    color: #76c043;
+    color: #6365c0;
     margin: 0 1px;
     -webkit-text-stroke: 0
 }
@@ -8749,8 +8749,8 @@ body, html {
 
 @media (max-width: 767px) {
     .navbar-default {
-        background-color: #76c043;
-        border-color: #76c043
+        background-color: #6365c0;
+        border-color: #6365c0
     }
 
     .navbar-default .whitefon {
@@ -8763,7 +8763,7 @@ body, html {
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > li > a.navbar-brand:focus, .navbar-default .navbar-nav > li > a.navbar-brand:hover, .navbar-default .navbar-nav > .open > a.navbar-brand:focus {
-    background: url("/local/templates/main_posi/css/img/cart.png") no-repeat #76c043;
+    background: url("/local/templates/main_posi/css/img/cart.png") no-repeat #6365c0;
     width: 46px
 }
 
@@ -8866,7 +8866,7 @@ body, html {
     .head {
         height: 50px;
         padding-top: 0;
-        background: #76c043
+        background: #6365c0
     }
 }
 
@@ -8974,7 +8974,7 @@ body, html {
 }
 
 .footer > div.cols .row .green {
-    color: #76c043;
+    color: #6365c0;
     margin-bottom: 18px
 }
 
@@ -9020,7 +9020,7 @@ body, html {
 }
 
 .footer > div.contact .phone {
-    color: #76c043;
+    color: #6365c0;
     display: block;
     padding-top: 15px;
     font-size: 24px
@@ -9631,7 +9631,7 @@ body, html {
 }
 
 .select2-container--classic .select2-selection--single:focus {
-    border-color: #76c043;
+    border-color: #6365c0;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(118, 192, 67, 0.6)
@@ -9665,7 +9665,7 @@ body, html {
 }
 
 .select2-container--classic .select2-selection--single:focus {
-    border: 1px solid #76c043
+    border: 1px solid #6365c0
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__rendered {
@@ -9722,7 +9722,7 @@ body, html {
 }
 
 .select2-container--classic.select2-container--open .select2-selection--single {
-    border: 1px solid #76c043
+    border: 1px solid #6365c0
 }
 
 .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
@@ -9756,7 +9756,7 @@ body, html {
 }
 
 .select2-container--classic .select2-selection--multiple:focus {
-    border: 1px solid #76c043
+    border: 1px solid #6365c0
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__rendered {
@@ -9807,7 +9807,7 @@ body, html {
 }
 
 .select2-container--classic.select2-container--open .select2-selection--multiple {
-    border: 1px solid #76c043
+    border: 1px solid #6365c0
 }
 
 .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
@@ -9870,7 +9870,7 @@ body, html {
 }
 
 .select2-container--classic.select2-container--open .select2-dropdown {
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 /* End */
@@ -9939,12 +9939,12 @@ body, html {
 }
 
 .select2-container--bootstrap .select2-results__option[aria-selected=true] {
-    background-color: #76c043;
+    background-color: #6365c0;
     color: #fff
 }
 
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-    background-color: #76c043;
+    background-color: #6365c0;
     color: #fff
 }
 
@@ -9996,7 +9996,7 @@ body, html {
     -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .select2-container--bootstrap.select2-container--open .select2-selection .select2-selection__arrow b {
@@ -10049,7 +10049,7 @@ body, html {
 .select2-container--bootstrap .select2-dropdown {
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    border-color: #76c043;
+    border-color: #6365c0;
     overflow-x: hidden;
     margin-top: -1px
 }
@@ -10129,7 +10129,7 @@ body, html {
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
     color: #000;
     background: #fff;
-    border: 1px solid #76c043;
+    border: 1px solid #6365c0;
     border-radius: 4px;
     cursor: default;
     float: left;
@@ -10452,7 +10452,7 @@ body, html {
 }
 
 .line-spin-fade-loader > div {
-    background-color: #76c043;
+    background-color: #6365c0;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -10530,7 +10530,7 @@ body, html {
 }
 
 .ball-spin-fade-loader > div {
-    background-color: #76c043;
+    background-color: #6365c0;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -10690,7 +10690,7 @@ body, html {
 }
 
 /* End */
-/* Start:/local/components/positronica/city.selector/templates/main/style.min.css?15441890941241*/
+/* Start:/local/components/teplo/city.selector/templates/main/style.min.css?15441890941241*/
 @charset "UTF-8";
 .city_change .popover {
     width: 100%;
@@ -10720,7 +10720,7 @@ body, html {
 }
 
 .city_change .city .navbar-nav a:hover, .city_change .city .navbar-nav a:active, .city_change .city .navbar-nav a:focus, .city_change .city .navbar-nav a.active {
-    color: #76c043
+    color: #6365c0
 }
 
 .city_change .city .block-city {
@@ -10767,7 +10767,7 @@ body, html {
 }
 
 .city_change .city input {
-    border: 2px solid #76c043;
+    border: 2px solid #6365c0;
     font-size: 14px
 }
 
@@ -10908,7 +10908,7 @@ body, html {
 }
 
 /* End */
-/* Start:/local/components/positronica/bx_main.register/templates/popup/style.min.css?1544189094185*/
+/* Start:/local/components/teplo/bx_main.register/templates/popup/style.min.css?1544189094185*/
 #registration .form-col-left.col-lg-6 {
     padding-left: 0;
     padding-right: 5px
@@ -10936,7 +10936,7 @@ body, html {
 }
 
 .head .input-group .form-control, .head .input-group .input-group-btn .btn, .head .input-group .input-group-addon {
-    border: 2px solid #76c043;
+    border: 2px solid #6365c0;
     font-size: 16px;
     height: 40px;
     background: #fff
@@ -10976,9 +10976,9 @@ div.title-search-result {
     overflow: hidden;
     z-index: 205;
     margin-top: -4px;
-    border-left: 2px solid #76c043;
-    border-right: 2px solid #76c043;
-    border-bottom: 2px solid #76c043;
+    border-left: 2px solid #6365c0;
+    border-right: 2px solid #6365c0;
+    border-bottom: 2px solid #6365c0;
     padding-right: 24px;
     background-color: #fff
 }
@@ -11023,7 +11023,7 @@ table.title-search-result td.title-search-item img {
 }
 
 table.title-search-result td.title-search-item b {
-    color: #76c043;
+    color: #6365c0;
     font-weight: normal
 }
 
@@ -11077,7 +11077,7 @@ div.title-search-fader {
 }
 
 /* End */
-/* Start:/local/components/positronica/filials.contact_info/templates/main/style.min.css?1544189094973*/
+/* Start:/local/components/teplo/filials.contact_info/templates/main/style.min.css?1544189094973*/
 @charset "UTF-8";
 .head .worktime {
     color: #969696;
@@ -11158,7 +11158,7 @@ div.title-search-fader {
 }
 
 /* End */
-/* Start:/local/components/positronica/menu/templates/left_catalog_full/style.min.css?154418909411877*/
+/* Start:/local/components/teplo/menu/templates/left_catalog_full/style.min.css?154418909411877*/
 @charset "UTF-8";
 .dropdown-menu {
     -webkit-box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.1);
@@ -11256,88 +11256,88 @@ div.title-search-fader {
 
 .menu .dropdown-menu.pz_menu .open > a {
     color: #fff;
-    background-color: #76c043
+    background-color: #6365c0
 }
 
 @media (min-width: 1200px) {
     .menu .dropdown-menu.pz_menu .open > a.pz_nout_pc {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -170px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -170px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzsmart {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -242px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -242px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzkomp_per {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -314px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -314px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pztele {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px 10px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px 10px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzserv {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -458px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -458px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzfoto {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -530px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -530px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzorg {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzauto {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -674px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -674px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzhome {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -746px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -746px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzkitchen {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -62px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -62px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzsad {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -134px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -134px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzservery {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -891px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -891px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzumnyidom {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -820px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -820px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzshcola {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzturizm {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -963px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -963px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu .open > a.pzogtehnika {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1103px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1103px;
+        background-color: #6365c0
     }
 }
 
@@ -11363,147 +11363,147 @@ div.title-search-fader {
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pz_nout_pc {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -26px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -26px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pz_nout_pc:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -170px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -170px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzsmart {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -206px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -206px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzsmart:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -242px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -242px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzkomp_per {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -278px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -278px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzkomp_per:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -314px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -314px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pztele {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -350px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -350px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pztele:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px 10px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px 10px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzserv {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -422px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -422px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzserv:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -458px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -458px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzfoto {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -494px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -494px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzfoto:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -530px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -530px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzorg {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -998px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -998px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzorg:hover, .menu .dropdown-menu.pz_menu > li > a.pzorg:focus {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzauto {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -638px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -638px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzauto:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -674px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -674px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzhome {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -710px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -710px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzhome:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -746px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -746px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzkitchen {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -386px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -386px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzkitchen:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -62px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -62px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzsad {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -98px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -98px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzsad:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -134px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -134px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzservery {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -855px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -855px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzservery:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -891px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -891px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzumnyidom {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -782px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -782px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzumnyidom:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -820px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -820px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzshcola {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -998px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -998px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzshcola:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1034px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzturizm {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -925px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -925px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzturizm:hover {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -963px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -963px;
+        background-color: #6365c0
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzogtehnika {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1068px
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1068px
     }
 
     .menu .dropdown-menu.pz_menu > li > a.pzogtehnika:hover, .menu .dropdown-menu.pz_menu > li > a.pzogtehnika:focus {
-        background: url("/local/components/positronica/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1103px;
-        background-color: #76c043
+        background: url("/local/components/teplo/menu/templates/left_catalog_full/img/menu.png?v=1479978409") no-repeat 16px -1103px;
+        background-color: #6365c0
     }
 }
 
@@ -11616,7 +11616,7 @@ div.title-search-fader {
     float: left;
     width: 33.33333%;
     min-height: 100%;
-    background: #76c043
+    background: #6365c0
 }
 
 .menu .dropdown-menu.pz_menu .info ul {
@@ -12254,7 +12254,7 @@ ul.user-list li:last-child::after {
 }
 
 .available .main-store {
-    color: #76c043
+    color: #6365c0
 }
 
 .available-store span {
@@ -12290,7 +12290,7 @@ ul.user-list li:last-child::after {
 }
 
 /* End */
-/* Start:/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/style.min.css?154418909438665*/
+/* Start:/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/style.min.css?154418909438665*/
 .bx-soa {
     padding-bottom: 50px
 }
@@ -12373,7 +12373,7 @@ ul.user-list li:last-child::after {
 
 .bx-soa-section.bx-step-completed .bx-soa-section-title-count:before {
     display: block;
-    background: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/k6.png) no-repeat center
+    background: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/k6.png) no-repeat center
 }
 
 .bx-soa-section.bx-step-warning .bx-soa-section-title-count:after {
@@ -12981,7 +12981,7 @@ ul.user-list li:last-child::after {
     left: -5px;
     margin-top: -8px;
     position: absolute;
-    background: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/images/sprite.png) no-repeat center -54px
+    background: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/images/sprite.png) no-repeat center -54px
 }
 
 .bx-soa-pickup-list-item .bx-soa-pickup-l-item-detail {
@@ -13043,7 +13043,7 @@ ul.user-list li:last-child::after {
     height: 100%;
     padding: 20px 30px 30px;
     margin-top: 25px;
-    border: 2px solid #76c043
+    border: 2px solid #6365c0
 }
 
 .bx-soa-cart-total-fixed {
@@ -13562,7 +13562,7 @@ ul.user-list li:last-child::after {
 }
 
 .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container {
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .bx-soa-pp-inner-ps.bx-selected .bx-soa-pp-company-graf-container {
@@ -14203,7 +14203,7 @@ ymaps h3 {
     right: 1px;
     top: 50%;
     margin-top: -19px;
-    background: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/images/sprite.png) no-repeat center;
+    background: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/images/sprite.png) no-repeat center;
     -webkit-background-size: 11px auto;
     background-size: 11px auto
 }
@@ -14308,7 +14308,7 @@ hr.bxe-light {
     background-color: #f0f5ee;
     border-width: 1px;
     border-color: #b9ceaf;
-    background-image: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/k6.png);
+    background-image: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/k6.png);
     background-position: 30px center;
     background-repeat: no-repeat
 }
@@ -14505,7 +14505,7 @@ hr.bxe-light {
     width: 131px;
     height: 116px;
     margin: 50px auto 42px;
-    background: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/images/empty_cart.svg) no-repeat center;
+    background: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/images/empty_cart.svg) no-repeat center;
     -webkit-background-size: contain;
     background-size: contain
 }
@@ -14529,7 +14529,7 @@ hr.bxe-light {
 }
 
 .input-group-addon .bx-calendar {
-    background: url(/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/images/calendar.svg) no-repeat center;
+    background: url(/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/images/calendar.svg) no-repeat center;
     display: inline-block;
     width: 18px;
     background-size: 18px auto;
@@ -14562,8 +14562,8 @@ input[name=BuyButton] {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
-    background-color: #76c043;
-    border-color: #76c043;
+    background-color: #6365c0;
+    border-color: #6365c0;
     color: #fff;
     background-image: none;
     border: 1px solid transparent;
@@ -14571,19 +14571,19 @@ input[name=BuyButton] {
 }
 
 input[name=BuyButton]:hover {
-    background-color: #4ea521;
+    background-color: #6365c0;
     border-color: #3c6221
 }
 
 input[name=BuyButton]:active {
-    background-color: #4ea521;
+    background-color: #6365c0;
     outline: thin dotted;
     outline-offset: -2px;
     border-color: #3c6221
 }
 
 input[name=BuyButton]:focus {
-    background-color: #4ea521;
+    background-color: #6365c0;
     border-color: #3c6221;
     outline: thin dotted;
     outline-offset: -2px
@@ -14607,7 +14607,7 @@ input[name=BuyButton]:focus {
 }
 
 /* End */
-/* Start:/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/style_posi.min.css?154418909411276*/
+/* Start:/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/style_posi.min.css?154418909411276*/
 @charset "UTF-8";
 .basket_content .panel-heading {
     padding: 20px 25px 0
@@ -14633,7 +14633,7 @@ input[name=BuyButton]:focus {
 }
 
 .basket_content .continue .upl, .basket_content .continue .downl {
-    background: #76c043;
+    background: #6365c0;
     height: 2px;
     left: 15px;
     position: absolute;
@@ -14693,7 +14693,7 @@ input[name=BuyButton]:focus {
 
 .wrap_buy {
     padding: 30px;
-    border: 2px solid #76c043
+    border: 2px solid #6365c0
 }
 
 .wrap_buy .title {
@@ -14810,7 +14810,7 @@ input[name=BuyButton]:focus {
 }
 
 .methods-tabs > li > a .ico, .methods-tabs > li.active > a .ico {
-    color: #76c043;
+    color: #6365c0;
     font-size: 20px;
     margin-right: 12px;
     line-height: 22px;
@@ -14823,7 +14823,7 @@ input[name=BuyButton]:focus {
 }
 
 .methods-tabs > li.active, .methods-tabs > li:hover, .methods-tabs > li:focus {
-    border-color: #76c043
+    border-color: #6365c0
 }
 
 .row_basket {
@@ -14883,7 +14883,7 @@ input[name=BuyButton]:focus {
 }
 
 .row_col .item_rating .stars_container .stars_bg {
-    background: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/stars.png") no-repeat scroll center center;
+    background: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/stars.png") no-repeat scroll center center;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -14988,7 +14988,7 @@ input[name=BuyButton]:focus {
 
 .row_bottom .filter-toggle {
     font-size: 13px;
-    color: #76c043;
+    color: #6365c0;
     cursor: pointer;
     display: inline-block;
     line-height: 1.1;
@@ -15108,7 +15108,7 @@ input[name=BuyButton]:focus {
 }
 
 .btn-group-large .btn.active .block, .btn-group-large .btn:hover .block {
-    border-color: #76c043;
+    border-color: #6365c0;
     color: #000
 }
 
@@ -15129,7 +15129,7 @@ input[name=BuyButton]:focus {
 }
 
 .btn-group-large .btn i {
-    color: #76c043;
+    color: #6365c0;
     font-size: 24px;
     float: left;
     margin-right: 8px
@@ -15175,19 +15175,19 @@ input[name=BuyButton]:focus {
 }
 
 .payment-types .btn.cash {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/cash.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/cash.png")
 }
 
 .payment-types .btn.card {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/card.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/card.png")
 }
 
 .payment-types .btn.card-site {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/card-site.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/card-site.png")
 }
 
 .payment-types .btn.paypal {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/paypal.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/paypal.png")
 }
 
 .payment-types .btn .block {
@@ -15196,7 +15196,7 @@ input[name=BuyButton]:focus {
 }
 
 .icon-calendar {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/calendar.png");
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/calendar.png");
     display: inline-block;
     width: 22px;
     height: 18px
@@ -15255,7 +15255,7 @@ input[name=BuyButton]:focus {
 }
 
 .btn-group-large .btn.active .block, .btn-group-large .btn:hover .block {
-    border-color: #76c043;
+    border-color: #6365c0;
     color: #000
 }
 
@@ -15276,7 +15276,7 @@ input[name=BuyButton]:focus {
 }
 
 .btn-group-large .btn i {
-    color: #76c043;
+    color: #6365c0;
     font-size: 32px;
     line-height: 22px;
     float: left;
@@ -15292,19 +15292,19 @@ input[name=BuyButton]:focus {
 }
 
 .payment-types .btn.cash {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/cash.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/cash.png")
 }
 
 .payment-types .btn.card {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/card.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/card.png")
 }
 
 .payment-types .btn.card-site {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/card-site.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/card-site.png")
 }
 
 .payment-types .btn.paypal {
-    background-image: url("/local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/img/paypal.png")
+    background-image: url("/local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/img/paypal.png")
 }
 
 .payment-types .btn .block {
@@ -15335,7 +15335,7 @@ input[name=BuyButton]:focus {
 }
 
 .accordion-block .accordion-heading, .accordion-block .collapse.in {
-    border: 2px solid #76c043
+    border: 2px solid #6365c0
 }
 
 .accordion-block .accordion-heading {
@@ -15425,7 +15425,7 @@ h1 {
 }
 
 /* End */
-/* /local/templates/main_posi/css/positronica.min.css?1544189095147337 */
+/* /local/templates/main_posi/css/teplo.min.css?1544189095147337 */
 /* /local/templates/main_posi/css/header.min.css?15441890952152 */
 /* /local/templates/main_posi/css/footer.min.css?15441890954950 */
 /* /local/templates/main_posi/css/select2/core.min.css?154418909515200 */
@@ -15433,18 +15433,18 @@ h1 {
 /* /local/templates/main_posi/css/loader.min.css?15441890952758 */
 /* /local/templates/main_posi/css/random.min.css?154418909569 */
 /* /local/templates/main_posi/css/star-rating.min.css?15441890952049 */
-/* /local/components/positronica/city.selector/templates/main/style.min.css?15441890941241 */
+/* /local/components/teplo/city.selector/templates/main/style.min.css?15441890941241 */
 /* /local/templates/.default/components/bitrix/sale.basket.basket.line/mini_top/style.min.css?1544189095750 */
 /* /local/templates/.default/components/bitrix/system.auth.form/top_login/style.min.css?1544189095789 */
-/* /local/components/positronica/bx_main.register/templates/popup/style.min.css?1544189094185 */
+/* /local/components/teplo/bx_main.register/templates/popup/style.min.css?1544189094185 */
 /* /local/templates/.default/components/bitrix/search.title/top_search/style.min.css?15441890952696 */
-/* /local/components/positronica/filials.contact_info/templates/main/style.min.css?1544189094973 */
-/* /local/components/positronica/menu/templates/left_catalog_full/style.min.css?154418909411877 */
+/* /local/components/teplo/filials.contact_info/templates/main/style.min.css?1544189094973 */
+/* /local/components/teplo/menu/templates/left_catalog_full/style.min.css?154418909411877 */
 /* /local/templates/.default/components/bitrix/breadcrumb/main/style.min.css?1544189095448 */
 /* /local/templates/.default/components/bitrix/sale.location.selector.search/top_mycity/style.min.css?15441890955444 */
 /* /local/templates/main_posi/styles.min.css?15441890952248 */
-/* /local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/style.min.css?154418909438665 */
-/* /local/components/positronica/bx_sale.order.ajax/templates/bitrix_modify/style_posi.min.css?154418909411276 */
+/* /local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/style.min.css?154418909438665 */
+/* /local/components/teplo/bx_sale.order.ajax/templates/bitrix_modify/style_posi.min.css?154418909411276 */
 /* Start:/bitrix/components/bitrix/sale.location.selector.search/templates/.default/style.min.css?15529391245463*/
 .bx-sls .dropdown-block {
     border: 1px solid #bdbdbd;

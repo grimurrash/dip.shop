@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Бытовая техника и электроника в Казани - интернет-магазин {{ config('app.name', 'Мир котлов') }}
+Теплогазснаб - интернет-магазин котлов в Казани
 @endsection
 @push('styles')
     <link href="{{ asset('css/profile.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
@@ -67,7 +67,7 @@
                                             <div class="form-group col-xs-12 col-sm-6 col-md-7 col-lg-8 col-lgx-9">
                                                 <input type="text" class="input_edit form-control" required
                                                        id="inputName" name="NAME" minlength="2" maxlength="50"
-                                                       value="Рашит"/>
+                                                       value="Влада"/>
                                             </div>
                                             <div class="form-group col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lgx-3">
                                                 <label for="inputlastName"
@@ -78,7 +78,7 @@
                                                 <input type="text" class="input_edit form-control" required
                                                        id="inputlastName" name="LAST_NAME" minlength="2"
                                                        maxlength="50"
-                                                       value="Сабиров"/>
+                                                       value="Токранова"/>
                                             </div>
 
                                             <div class="form-group col-xs-12 col-sm-6 col-md-5 col-lg-4 col-lgx-3">
@@ -142,12 +142,12 @@
                                             <div class="form-group col-xs-12 col-sm-6 col-md-7 col-lg-8 col-lgx-9">
                                                 <input type="text" class="input_edit form-control" required
                                                        id="inputEmail" email="true" name="EMAIL" maxlength="50"
-                                                       value="rashit.sabirov1999@gmail.com"/>
+                                                       value="vlada.tokranova@mail.ru"/>
                                             </div>
                                             <div class="clearfix"></div>
                                             <input type="hidden" class="input_edit form-control" required
                                                    id="inputLogin" name="LOGIN" maxlength="50"
-                                                   value="rashit.sabirov1999@gmail.com"/>
+                                                   value="vlada.tokranova@mail.ru"/>
 
                                         </form>
                                     </div>
@@ -168,15 +168,15 @@
                                                                                          value="s1"/>
                                 <input type="hidden" name="ID" value="167148"/>
                                 <input type="hidden" name="LOGIN" maxlength="50"
-                                       value="rashit.sabirov1999@gmail.com">
+                                       value="vladochka.tokranova@mail.ru">
                                 <input type="hidden" name="EMAIL" maxlength="50"
-                                       value="rashit.sabirov1999@gmail.com">
+                                       value="vladochka.tokranova@mail.ru">
                                 <input type="hidden" name="PERSONAL_GENDER" maxlength="50" value="">
                                 <div id="profile-block-lg" class="col-lgx-4 col-lg-4 col-md-4 profile-block">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h2>Сабиров Рашит</h2>
+                                                <h2>Токранова Влада</h2>
                                                 <div class="photo">
                                                     <a title="Увеличить"
                                                        onclick="ImgShw('/upload/main/63d/63d250e37ce7e27244583d5a3e1a6ba5.jpg', 700, 393, ''); return false;"
@@ -270,21 +270,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js"></script>
     <script type="text/javascript"
             src="/local/templates/components/system.field.edit/script.min.js"></script>
     <script type="text/javascript"

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title',"Бытовая техника и электроника в Казани - интернет-магазин Позитроника")
-@section('description','Федеральный интернет-магазин Позитроника предлагает большой выбор электроники и бытовой техники по выгодным ценам в Казани')
+@section('title',"Оформление товаров Теплогазснаб" )
+@section('description','Широкий выбор котлов и других отопительных оборудований интернет-магазина  Теплогазснаб')
 @push('styles')
     <link href="{{ asset('css/order.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
 @endpush
@@ -25,8 +25,8 @@
                 }
                 ?>
                 <h1>Оформление заказа</h1>
-                @if(session()->get('errors'))
-                    <div class="alert alert-danger">{{ session()->get('errors') }}</div>
+                @if(session()->has('message_errors'))
+                    <div class="alert alert-danger">{{ session()->get('message_errors') }}</div>
                 @endif
                 <div id="bx-soa-order" class="row basket_content">
                     <!--	MAIN BLOCK	-->
@@ -85,7 +85,7 @@
                                                 <span class="bx-authform-starrequired">*</span>
                                             </label>
                                             <div class="soa-property-container">
-                                                <input type="text" maxlength="80"
+                                                <input type="email" maxlength="80"
                                                        size="30" name="email"
                                                        id="soa-property-2"
                                                        value="{{ old('email') }}"
@@ -115,7 +115,7 @@
                                              data-property-id-row="63">
                                             <label for="soa-property-63" class="bx-soa-custom-label">Согласен на
                                                 обработку
-                                                <a href="{{ route('politika') }}">персональных данных</a>
+                                                <a href="#" style="text-decoration: none;color: black;">персональных данных </a>
                                                 <span class="bx-authform-starrequired">*</span>
                                             </label>
                                             <div class="checkbox">
@@ -138,6 +138,7 @@
                                                 <input type="text" size="30"
                                                        name="address"
                                                        id="soa-property-44"
+                                                       required
                                                        value="{{ old('address') }}"
                                                        autocomplete="address"
                                                        placeholder=""
@@ -151,7 +152,7 @@
                                             </label>
                                             <div class="soa-property-container">
                                                 <input type="text" size="30"
-                                                       name="dom"
+                                                       name="dom" required
                                                        value="{{ old('dom') }}"
                                                        id="soa-property-45"
                                                        placeholder=""
@@ -161,9 +162,10 @@
                                         <div class="col-md-3 col-lg-3 {{ $errors->has('kv') ? ' has-error' : '' }} col-xs-12 form-group bx-soa-customer-field"
                                              data-property-id-row="46">
                                             <label for="soa-property-46" class="bx-soa-custom-label">Кв./офис</label>
+                                            <span class="bx-authform-starrequired">*</span>
                                             <div class="soa-property-container">
                                                 <input type="text" size="30"
-                                                       name="kv"
+                                                       name="kv" required
                                                        value="{{ old('kv') }}"
                                                        id="soa-property-46"
                                                        placeholder=""
@@ -175,9 +177,15 @@
                                         <div class="col-lg-8 {{ $errors->has('comment') ? ' has-error' : '' }} col-xs-12 form-group bx-soa-customer-field">
                                             <label for="orderDescription" class="bx-soa-customer-label">Комментарии к
                                                 заказу:</label>
-                                            <textarea id="orderDescription" cols="4"
+
+                                            <input id="orderDescription" cols="4"
+                                                      autocomplete="comment2323"
+
                                                       class="form-control bx-soa-customer-textarea bx-ios-fix"
-                                                      name="comment">{{ old('comment') }}</textarea></div>
+                                                      name="comment"
+                                                        value = "{{ old('comment') }}">
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +200,7 @@
                                         Оформить заказ
                                     </button>
                                 @else
-                                    <button type="submit" disabled style="margin: 10px 0"
+                                    <button type="button" disabled style="margin: 10px 0"
                                             class="pull-right btn btn-primary btn-lg col-lg-4">
                                         Корзина пуста
                                     </button>
@@ -263,21 +271,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
     <script type="text/javascript"
             src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js?1544189094662"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js?1544189094662"></script>
 @endpush

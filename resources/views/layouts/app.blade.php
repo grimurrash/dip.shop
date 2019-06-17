@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>@yield('title')</title>
-    <link rel="canonical" href="https://kazan.positronica.ru/">
+    <link rel="canonical" href="https://kazan.teplo.ru/">
     <!-- END Meta -->
 
     <!-- Styles -->

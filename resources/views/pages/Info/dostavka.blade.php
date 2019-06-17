@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Условия доставки товара, сроки, стоимость доставки - {{ config('app.name', 'Мир котлов') }}
+    Условия доставки товара, сроки, стоимость доставки - Теплогазснаб
 @endsection
 @push('styles')
     <link href="{{ asset('css/pages.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
@@ -20,51 +20,27 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="user-content">
-                            Поздравляем, вы приобрели товары в самом позитивном магазине. Теперь мы должны их
-                            вам доставить. В магазине ПОЗИТРОНИКА существует несколько вариантов доставки ваших
+                            В Интернет-магазине Теплогазснаб существует несколько вариантов доставки ваших
                             покупок:
-                            <h3>Яндекс.Доставка</h3>
                             <ul class="user-list">
-
-
                                 <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    срок доставки до 3 дней
+                                    Курьерская доставка
                                 </li>
 
                                 <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    Для оформления доставки нажмите на иконку «Автомобиль». В открывшемся
-                                    списке, выберите транспортную компанию, которой Вы доверите доставку заказа
-                                    и определите удобный вариант его получения.
-                                </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    Срок и стоимость доставки зависит от региона и выбранного вами способа
-                                    доставки заказа и приобретенного товара.
-                                </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    Подробная информация о стоимости и сроках доставки будет доступна при
-                                    оформлении заказа.
-                                </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    Мы выбрали самые надежные и быстрые транспортные компании.<br>
-                                    <img src='/local/images/delivery/pr.png'>
-                                    <img src='/local/images/delivery/pek.png'>
-                                    <img src='/local/images/delivery/cdek.png'>
-                                    <img src='/local/images/delivery/dpd.png'> <br>
-                                    <img src='/local/images/delivery/mp.png'>
-                                    <img src='/local/images/delivery/pp.png'>
-                                    <img src='/local/images/delivery/bb.png'>
-                                    <div id="ydwidget" class="yd-widget-modal"></div>
+                                   Самовызов
                                 </li>
                             </ul>
-                            <ul>
-                            </ul>
-                            <h4>Стоимость доставки</h4>
-                            Мы подобрали для Вас максимально надежные и недорогие варианты доставки заказа. Срок
-                            и стоимость доставки зависит от региона, способа доставки и выбранного товара.
-                            Подробная информация о стоимости и сроках доставки будет доступна при оформлении
-                            заказа.
+                            <h4>Курьерская доставка</h4>
+                            <p>Вы можете заказать доставку товара с помощью курьера, который прибудет по указанному адресу
+                            в будние дни и субботу с 10.00 до 19.00. Курьерская служба, после поступления товара на их
+                            склад, свяжется с вами, уточнит адрес доставки и сообщит ориентировочное время доставки.<p/>
+
+                            <p>Вы вскрываете упаковку при курьере, осматриваете на целостность и соответствие указанной
+                                комплектации. Время осмотра ограничено 15 минутами. </p>
+                            <h4>Самовызов</h4>
+                            Вы можете забрать товар  из офиса. Расположенного по адресу г. Казань, ул.Родины 8а.
                             <h4>География и варианты доставки:</h4>
-                            В 5 500 городов России.
                             В зависимости от региона, доставка осуществляется:
                             <ul class="user-list">
                                 <li><span class="glyphicon glyphicon-ok text-primary"></span>
@@ -75,9 +51,6 @@
                                 </li>
                                 <li><span class="glyphicon glyphicon-ok text-primary"></span>
                                     до пункта выдачи заказов транспортной компании
-                                </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span>
-                                    до постамата
                                 </li>
                             </ul>
 
@@ -108,10 +81,9 @@
                                     упаковки, повреждения или некомплектность товара.
                                 </li>
                                 <li>Отсканированный акт отправьте нам по электронной почте <a
-                                            href="mailto:moscow@positronica.ru">moscow@positronica.ru</a> и оригинал
-                                    по адресу: 125466, г. Москва, ул. Родионовская, д. 2, корп. 1, помещ. II,
-                                    комн. 3 ООО "Авангард". А так же свяжитесь с нами по телефону
-                                    +7(495)256-04-33 (Сегодня: 10:00 - 19:00 по МСК) .
+                                            href="teplogazsnab@inbox.ru">teplogazsnab@inbox.ru</a>
+                                    А так же свяжитесь с нами по телефону
+                                    8 950-323-7-783 (Сегодня: 10:00 - 19:00 по МСК) .
                                 </li>
                                 <li>Без предоставления акта приёмки возмещение или обмен товара не
                                     производится.
@@ -119,22 +91,8 @@
                                 <li>Будьте внимательны, любые повреждения упаковки могут повлечь за собой
                                     повреждения товара или некомплектность.
                                 </li>
-                                <li>Большинство технически сложных товаров требует Вашего ознакомления с
-                                    руководством по эксплуатации до начала их использования.
-                                </li>
-                                <li>В зимнее время года передача товара сопряжена с резким изменением
-                                    температурного режима, поэтому немедленное включение электронной техники
-                                    является нарушением условий эксплуатации.
-                                    Процедура тестирования или проверки при передаче товара никак не
-                                    регламентируется законом, время ее проведения не прогнозируется, а
-                                    полученный результат не может квалифицированно оцениваться экспедитором.
-                                </li>
-                                <li>В течение 7 (семи) дней после получения товара Вы вправе отказаться от
-                                    покупки без объяснения причин, если товар не эксплуатировался, а также при
-                                    условии, что его упаковка и товарный вид полностью сохранены.
-                                </li>
                             </ol>
-                            Компания ПОЗИТРОНИКА всегда прилагает максимальные усилия для отправки заказов в
+                            Компания Теплогазснаб всегда прилагает максимальные усилия для отправки заказов в
                             указанные сроки, но не может гарантировать доставку точно в заявленное время или к
                             заявленной дате. Компания не принимает на себя никаких обязательств по возмещению
                             любых убытков Заказчика, прямых или косвенных, которые могут быть следствием срыва
@@ -179,7 +137,6 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="{{route('oplata')}}">Оплата</a></li>
                     <li class="active"><a href="{{route('dostavka')}}">Доставка</a></li>
-                    <li><a href="{{route('politika')}}">Политика персональных данных</a></li>
                 </ul>
             </div>
         </div>
@@ -190,21 +147,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
     <script type="text/javascript"
             src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js?1544189094662"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js?1544189094662"></script>
 @endpush

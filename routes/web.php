@@ -77,6 +77,7 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('subcategories', 'SubcategoryController');
     Route::resource('products', 'ProductController');
     Route::resource('orders', 'OrderController');
+    Route::get('orders/{order}/delete','OrderController@delete')->name('orders.delete');
 //    Demo Template
     Route::prefix('demo')->name('demo.')->group(function () {
         Route::get('/elements', 'DemoController@elements')->name('elements');

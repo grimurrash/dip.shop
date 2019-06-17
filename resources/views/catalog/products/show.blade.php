@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title',"Купить Мышь в интернет-магазине Позитроника по низкой цене в Казани")
-@section('description','Телевизоры   в каталоге Позитроники представлены по доступной цене. Для того чтобы купить Телевизоры   онлайн, достаточно позвонить по телефону: 8 (800) 333-0-333. Доставка приобретенного товара по Казани, а также возможен самовывоз из магазина.')
+@section('title',"Купить товар в интернет-магазине Теплоагзснаб")
+@section('description','Котлы  в каталоге Теплогазснаб представлены по доступной цене. Для того чтобы купить котлы  онлайн, достаточно позвонить по телефону.')
 @push('styles')
     <link href="{{ asset('css/product.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
 @endpush
@@ -158,17 +158,6 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="opinion">
-                                        <div class="container-fluid">
-                                            <div class="row heading-row">
-                                                <div class="col-lg-12">
-                                                    <div class="pull-left">
-                                                        <h3>Отзывы</h3>
-                                                    </div>
-                                                    <a class="btn btn-default pull-right" data-toggle="collapse"
-                                                       href="#review-form" aria-expanded="false">Добавить отзыв</a>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div id="review-form" class="container-fluid" data-id="442506">
                                             <div class="row no-border">
                                                 <div class="col-lg-12 js_data"></div>
@@ -210,17 +199,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="date">19.11.2017</div>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <h5>Достоинства</h5>
-                                                    <p>Кресло понравилось. Качество отличное. Ткань приятная и
-                                                        достаточно плотная.</p>
-
-                                                    <h5>Недостатки</h5>
-                                                    <p>Не нашли. <a target="_blank"
-                                                                    href="/redirect.php?url=https://market.yandex.ru/product/1732006170/reviews?hid=10785222&amp;track=partner&amp;af=0d5a575147d34cb4d22ceb52876e7177">Все
-                                                            отзывы на Яндекс.Маркете</a></p>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -267,7 +245,7 @@
         <div class="well hidden-xs hidden-sm tags">
             <div class="block">
                 <div class="h2">{{ $product->name }}</div>
-                <p>Купите {{ $product->name }} в магазинах Позитроника с доставкой по Казани. {{ $product->name }}:
+                <p>Купите {{ $product->name }} в магазине Теплогазснаб с доставкой по Казани. {{ $product->name }}:
                     характеристики, отзывы покупателей, описание</p>
                 <div><br/></div>
                 <p><strong>Производитель оставляет за собой право изменять характеристики товара, его внешний вид и
@@ -280,21 +258,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
     <script type="text/javascript"
             src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js?1544189094662"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js?1544189094662"></script>
 @endpush

@@ -33,7 +33,7 @@
 
 .basket_content .buy .wrap_buy {
     padding: 30px;
-    border: 2px solid #76c043
+    border: 2px solid #6365c0;
 }
 
 .basket_content .buy .wrap_buy .title {
@@ -95,7 +95,7 @@
 
 .basket_content .row_basket .row_bottom .filter-toggle {
     font-size: 13px;
-    color: #76c043;
+    color: #6365c0;;
     cursor: pointer;
     display: inline-block;
     line-height: 1.1;
@@ -268,7 +268,7 @@
 }
 
 .basket_content .continue .upl,.basket_content .continue .downl {
-    background: #76c043;
+    background: #6365c0;;
     height: 2px;
     left: 15px;
     position: absolute;
@@ -335,13 +335,13 @@
 }
 
 .basket_content .method_deliv .methods-tabs>li>a .icon-product-doctav,.basket_content .method_deliv .methods-tabs>li>a .glyphicon-map-marker {
-    color: #76c043;
+    color: #6365c0;;
     font-size: 16px;
     margin-right: 5px
 }
 
 .basket_content .method_deliv .methods-tabs>li.active {
-    border-color: #76c043
+    border-color: #6365c0;
 }
 
 .basket_content .method_deliv .display-mode-tabs {
@@ -478,7 +478,7 @@
 }
 
 .btn-group-large .btn.active .block,.btn-group-large .btn:hover .block {
-    border-color: #76c043;
+    border-color: #6365c0;;
     color: #000
 }
 

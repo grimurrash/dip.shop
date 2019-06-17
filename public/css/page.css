@@ -94,7 +94,7 @@
 }
 
 .wrap-carousel .btnLeft:hover, .wrap-carousel .btnRight:hover {
-    background: #76c043
+    background: #6365c0;
 }
 
 .wrap-carousel .btnLeft .upl, .wrap-carousel .btnLeft .upr, .wrap-carousel .btnLeft .downl, .wrap-carousel .btnLeft .downr, .wrap-carousel .btnRight .upl, .wrap-carousel .btnRight .upr, .wrap-carousel .btnRight .downl, .wrap-carousel .btnRight .downr {
@@ -171,7 +171,7 @@
     }
 
     .product:hover {
-        border: 1px solid #76c043
+        border: 1px solid #6365c0;
     }
 }
 
@@ -270,7 +270,7 @@
 }
 
 .product .row .status.stock, .product .row .article.stock {
-    color: #76c043;
+    color: #6365c0;;
     opacity: 1;
     filter: alpha(opacity=100)
 }
@@ -354,7 +354,7 @@
 }
 
 .product .glyphicon-ok {
-    color: #76c043;
+    color: #6365c0;;
     font-size: 15px;
     opacity: 1;
     filter: alpha(opacity=100)
@@ -416,28 +416,28 @@
 }
 
 .infoblock .row > div .list-group-item.nal {
-    background: url(/local/components/positronica/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px 30px;
-    background-color: #76c043
+    background: url(/local/components/teplo/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px 30px;
+    background-color: #6365c0;
 }
 
 .infoblock .row > div .list-group-item.dost {
-    background: url(/local/components/positronica/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -60px;
-    background-color: #76c043
+    background: url(/local/components/teplo/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -60px;
+    background-color: #6365c0;
 }
 
 .infoblock .row > div .list-group-item.mback {
-    background: url(/local/components/positronica/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -150px;
-    background-color: #76c043
+    background: url(/local/components/teplo/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -150px;
+    background-color: #6365c0;
 }
 
 .infoblock .row > div .list-group-item.sert {
-    background: url(/local/components/positronica/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -240px;
-    background-color: #76c043
+    background: url(/local/components/teplo/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -240px;
+    background-color: #6365c0;
 }
 
 .infoblock .row > div .list-group-item.garant {
-    background: url(/local/components/positronica/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -330px;
-    background-color: #76c043
+    background: url(/local/components/teplo/settings.show/templates/main_privilege/img/privilege.png?v=1479978409) no-repeat 15px -330px;
+    background-color: #6365c0;
 }
 
 .infoblock .row > div .list-group-item > span {
@@ -617,7 +617,7 @@
 
 .basket_content .buy .wrap_buy {
     padding: 30px;
-    border: 2px solid #76c043
+    border: 2px solid #6365c0;
 }
 
 .basket_content .buy .wrap_buy .title {
@@ -679,7 +679,7 @@
 
 .basket_content .row_basket .row_bottom .filter-toggle {
     font-size: 13px;
-    color: #76c043;
+    color: #6365c0;;
     cursor: pointer;
     display: inline-block;
     line-height: 1.1;
@@ -852,7 +852,7 @@
 }
 
 .basket_content .continue .upl,.basket_content .continue .downl {
-    background: #76c043;
+    background: #6365c0;;
     height: 2px;
     left: 15px;
     position: absolute;
@@ -919,13 +919,13 @@
 }
 
 .basket_content .method_deliv .methods-tabs>li>a .icon-product-doctav,.basket_content .method_deliv .methods-tabs>li>a .glyphicon-map-marker {
-    color: #76c043;
+    color: #6365c0;;
     font-size: 16px;
     margin-right: 5px
 }
 
 .basket_content .method_deliv .methods-tabs>li.active {
-    border-color: #76c043
+    border-color: #6365c0;
 }
 
 .basket_content .method_deliv .display-mode-tabs {
@@ -1062,7 +1062,7 @@
 }
 
 .btn-group-large .btn.active .block,.btn-group-large .btn:hover .block {
-    border-color: #76c043;
+    border-color: #6365c0;;
     color: #000
 }
 

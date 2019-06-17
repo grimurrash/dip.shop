@@ -55,12 +55,12 @@ class OrderController extends Controller
             'fio.regex' => 'Неверный формат ФИО',
         ]);
         if ($valid->fails()) {
-            $request->session()->flash('errors', 'Ошибка при оформлении заявки. Не все поля заполнены или введены не верно');
+            $request->session()->flash('message_errors', 'Ошибка при оформлении заявки. Не все поля заполнены или введены не верно');
             return redirect()->back()->withErrors($valid->errors())->withInput();
         }
         $basket = $request->session()->get('basket');
         if (is_null($basket) || count($basket) < 1) {
-            $request->session()->flash('errors', 'Ошибка при оформлении заявки. Корзина не должна быть пустой');
+            $request->session()->flash('message_errors', 'Ошибка при оформлении заявки. Корзина не должна быть пустой');
             return redirect()->back()->withErrors($valid->errors())->withInput();
         }
 
@@ -69,7 +69,7 @@ class OrderController extends Controller
             'email' => $request->email,
             'phone' => $request->tel,
             'address' => $request->address . ' ' . $request->dom . '/' . $request->kv,
-            'comment' => $request->comment
+            'comment' => is_null($request->comment) ? '' : $request->comment
         ]);
 
         foreach ($basket as $item) {
@@ -147,5 +147,18 @@ class OrderController extends Controller
         ]);
         $request->session()->flash('message_success', 'Заказ отменен');
         return redirect()->route('admin.orders.show', $order);
+    }
+
+    public function delete(Order $order, Request $request){
+        if($order->status == 'В процессе' || $order->status == 'В ожидании'){
+            $request->session()->flash('message_success', 'Нельзя удалить незавершенный заказ');
+            return redirect()->route('admin.orders.show', $order);
+        }
+        foreach ($order->items as $item){
+            $item->delete();
+        }
+        $order->delete();
+        $request->session()->flash('message_success', 'Заказ удален');
+        return redirect()->route('admin.orders.index');
     }
 }

@@ -28,6 +28,7 @@ class CreateProductsTable extends Migration
             $table->foreign('image_id')->references('id')->on('images')->onDelete('cascade');
             $table->unsignedBigInteger('subcategory_id')->nullable();
             $table->foreign('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
+            $table->boolean('disabled')->default(0);
             $table->timestamps();
         });
         \Illuminate\Support\Facades\Artisan::call('db:seed');

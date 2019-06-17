@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-Способы, условия оплаты, предоплаты товара и услуг - {{ config('app.name', 'Мир котлов') }}
+Способы, условия оплаты, предоплаты товара и услуг - Теплогазснаб
 @endsection
 @push('styles')
     <link href="{{ asset('css/pages.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
@@ -20,59 +20,53 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="user-content">
-                            <h3>Предоплата</h3>
-                            <p>В каких случаях требуется предоплата?</p>
+                            <h3>Как оформить заказ</h3>
                             <ul class="user-list">
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span> при заказе
-                                    некоторых категорий
-                                    товара
+                                <li><span class="glyphicon glyphicon-ok text-primary"></span> Оформить заказ на нашем
+                                    сайте легко. Просто добавьте выбранные товары в корзину, а затем перейдите на
+                                    страницу Корзина, проверьте правильность заказанных позиций и нажмите кнопку
+                                    «Оформить заказ»
                                 </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span> если вы
-                                    заказываете товар в
-                                    населенный пункт, где нет магазина ПОЗИТРОНИКА или ПОИНТ, вам потребуется
-                                    внести предоплату
-                                    в размере 100% от стоимости заказа
+
+                            </ul>
+                            <div class="h5">Оформление заказа в стандартном режиме</div>
+
+
+                            <ul class="user-list">
+                                <li><span class="glyphicon glyphicon-ok text-primary"></span> Если вы уверены в выборе,
+                                    то можете самостоятельно оформить заказ, заполнив по этапам всю форму
                                 </li>
                             </ul>
-                            <div class="h5">Как внести предоплату?</div>
-
-                            <p>Предоплату можно внести: </p>
+                                <div class="h5">Доставка</div>
                             <ul class="user-list">
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span> в магазине
-                                    ПОЗИТРОНИКА или ПОИНТ
-                                </li>
-                                <li><span class="glyphicon glyphicon-ok text-primary"></span> полностью или
-                                    частично оплатить
-                                    заказ на сайте positronica.ru
+                                <li><span class="glyphicon glyphicon-ok text-primary"></span> В зависимости от места
+                                    жительства вам предложат варианты доставки. Выберите любой удобный способ. Подробнее
+                                    об условиях доставки читайте в разделе «Доставка»
                                 </li>
                             </ul>
 
-                            <h3>Оплатить покупку на сайте через Яндекс</h3>
-                            <p><b>В целях безопасности получатель должен предъявить документ, удостоверяющий
-                                    личность, ФИО в котором должны соответствовать <font color="#ff0000">ФИО
-                                        получателя</font>, указанные при оформлении заказа.</b></p>
-                            <p>К оплате принимаются банковские карты платежных систем Visa, MasterCard, Maestro,
-                                а также электронные деньги (Сбербанк Онлайн, Яндекс.Деньги, WebMoney, QIWI
-                                Wallet) через сервис Яндекс.Касса. </p>
-                            <p> Безопасность платежей обеспечивается использованием стандарта PCI DSS 3.0.</p>
-                            <h3>Оплата по безналичному расчету (индивидуальные предприниматели и юридические
-                                лица)</h3>
-                            <p></p>После оформления заказа на сайте интернет-магазина positronica.ru формируется
-                            счет для оплаты по безналичному расчету. Для получения платежной информации на
-                            странице оплаты заказа нажмите на ссылку Оплатить заказ. Счет и резерв товара
-                            действительны в течение трех банковских дней. <p></p>
+                            <h3>Покупатель</h3>
+                            <p>Введите данные о себе: ФИО, E-Mail, адрес доставки, номер телефона, улицу, дом и квартиру.
+                                В поле «Комментарии к заказу» введите сведения, которые могут пригодиться курьеру,
+                                например: подъезды в доме считаются справа налево. </p>
+                            <h3>Оформление заказа</h3>
+                            <p></p>Проверьте правильность ввода информации: позиции заказа, выбор местоположения,
+                            данные о покупателе. Нажмите кнопку «Оформить заказ».
+                            Наш сервис запоминает данные о пользователе, информацию о заказе и в следующий раз предложит
+                            вам повторить к вводу данные предыдущего заказа. Если условия вам не подходят, выбирайте
+                            другие варианты. <p></p>
+                            <h3>Оплаты</h3>
+                            <p></p>При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и передаёте ему
+                            сумму за товар в рублях. Курьер предоставляет товар, который можно осмотреть на предмет
+                            повреждений, соответствие указанным условиям. Покупатель подписывает товаросопроводительные
+                            документы, вносит денежные средства и получает чек.<p></p>
+
+                            <p></p>Также оплата наличными доступна при самовывозе из магазина. <p></p>
+                            <p align="center"><img class="img-responsive"
+                                                   src="/local/images/from_old/logo.png">
+                            </p>
                             <p></p>
-                            <p> Товар отпускается после зачисления средств на наш расчетный счет. При передаче
-                                товара получателю необходимо предъявить паспорт и предоставить оригинал
-                                доверенности от организации-плательщика с указанием получаемых материальных
-                                ценностей. Если товар передается лично генеральному директору, необходимо
-                                заверить наш экземпляр товарно-транспортной накладной печатью
-                                организации-плательщика и предъявить паспорт, а также документ, подтверждающий
-                                полномочия директора (протокол или приказ о назначении). В зависимости от
-                                содержимого заказа вам будут предоставлены следующие документы: товарная
-                                накладная, счет, счет-фактура, акт приема-передачи материальных ценностей, акт о
-                                выполненных работах.</p>При оплате по безналичному расчету стоимость товаров
-                            увеличивается на 3.5%.
+
                         </div>
                     </div>
                 </div>
@@ -84,7 +78,6 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active"><a href="{{route('oplata')}}">Оплата</a></li>
                     <li><a href="{{route('dostavka')}}">Доставка</a></li>
-                    <li><a href="{{route('politika')}}">Политика персональных данных</a></li>
                 </ul>
             </div>
         </div>
@@ -95,21 +88,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
     <script type="text/javascript"
             src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js?1544189094662"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js?1544189094662"></script>
 @endpush

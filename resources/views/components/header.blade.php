@@ -32,7 +32,7 @@
                data-value='["\u041f\u043d-\u041f\u0442: 10:00 - 19:00","\u0421\u0431-\u0412\u0441: \u0412\u044b\u0445\u043e\u0434\u043d\u043e\u0439"]'>Сегодня:
                 10:00 - 19:00 по МСК</a>
 
-            <a class='phone' data-toggle='popover' data-html='true'>8(800) 333-0-333</a>
+            <a class='phone' data-toggle='popover' data-html='true'>8 950-323-7-783</a>
         </div>
     </div>
 </div>

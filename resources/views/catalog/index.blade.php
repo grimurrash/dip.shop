@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title',"Каталог товаров бытовой техники и электроники «ПОЗИТРОНИКА (Казань)")
-@section('description','Широкий выбор электроники и бытовой техники в каталоге товаров интернет магазина ПОЗИТРОНИКА «ПОЗИТРОНИКА (Казань)')
+@section('title',"Каталог товаров Теплогазснаб" )
+@section('description','Широкий выбор котлов и других отопительных оборудований интернет-магазина  Теплогазснаб')
 
 @push('styles')
     <link href="{{ asset('css/catalog.css') }}" type="text/css" data-template-style="true" rel="stylesheet">
@@ -33,21 +33,21 @@
 {{-- Include JS Scripts --}}
 @push('scripts')
     <script type="text/javascript"
-            src="/local/components/positronica/city.selector/script.min.js"></script>
+            src="/local/components/teplo/city.selector/script.min.js"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_main.register/script.min.js?1544189094858"></script>
+            src="/local/components/teplo/bx_main.register/script.min.js?1544189094858"></script>
     <script type="text/javascript"
             src="//opt-860641.ssl.1c-bitrix-cdn.ru/bitrix/components/bitrix/search.title/script.min.js?15556635956443"></script>
     <script type="text/javascript"
             src="/local/templates/components/search.title/script.min.js?15441890951164"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/filials.contact_info/script.min.js?15441890941696"></script>
+            src="/local/components/teplo/filials.contact_info/script.min.js?15441890941696"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/menu/script.min.js?15441890943714"></script>
+            src="/local/components/teplo/menu/script.min.js?15441890943714"></script>
     <script type="text/javascript"
             src="/local/templates/components/news.list/script.min.js?1544189095185"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/bx_catalog.top/script.js?15441890943019"></script>
+            src="/local/components/teplo/bx_catalog.top/script.js?15441890943019"></script>
     <script type="text/javascript"
-            src="/local/components/positronica/catalog.selected_in_cart/script.min.js?1544189094662"></script>
+            src="/local/components/teplo/catalog.selected_in_cart/script.min.js?1544189094662"></script>
 @endpush

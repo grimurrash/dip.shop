@@ -22,7 +22,7 @@ class ProductController extends Controller
     {
         return view('admin.products.index', [
             'subcategories' => Subcategory::all(),
-            'products' => Product::orderBy('id')->paginate(8)
+            'products' => Product::where('disabled', 0)->orderBy('id')->paginate(8)
         ]);
     }
 
@@ -35,7 +35,7 @@ class ProductController extends Controller
     {
         return view('admin.products.index', [
             'subcategories' => Subcategory::all(),
-            'products' => Product::orderBy('id')->paginate(8)
+            'products' => Product::where('disabled',0)->orderBy('id')->paginate(8)
         ]);
     }
 
@@ -204,7 +204,10 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         Session::flash('message_success', 'Товар «' . $product->name . '» успешно удален');
-        $product->delete();
+        $product->update([
+            'quantity'=>0,
+            'disabled' => 1
+        ]);
         return redirect()->route('admin.products.index');
     }
 }
